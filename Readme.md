@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Eugene Kalinowski](https://up.htmlacademy.ru/adaptive/16/user/409751).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Кравченко](https://up.htmlacademy.ru/adaptive/16/user/13921).
 
 ---
 
