@@ -11,8 +11,8 @@
 <body>
   <div class="container">
     <header class="page-header">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="http://placehold.it/86x35" width="86" height="35"
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35"
           alt="Логотип «Мишка»">
       </a>
       <nav class="main-nav">
@@ -111,6 +111,19 @@
         <a class="page-footer__developer-logo" href="#"></a>
       </div>
     </footer>
+    <div class="overlay"></div>
+    <section class="to-cart">
+      <h2 class="to-cart__title">Добавить в корзину</h2>
+      <form class="to-cart__options product-options" action="http://echo.htmlacademy.ru">
+        <p class="product-options__name">Выберите размер:</p>
+        <div class="product-options__controls options-controls">
+          <button class="options-controls__btn btn" type="button">S</button>
+          <button class="options-controls__btn btn" type="button">M</button>
+          <button class="options-controls__btn btn" type="button">L</button>
+        </div>
+        <button class="to-cart__submit-btn btn" type="submit">Добавить</button>
+      </form>
+    </section>
   </div>
 </body>
 
