@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <title>«Мишка» | Каталог</title>
+  <link href="css/normalize.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="container">
+      <a class="page-header__logo">
+        <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип «Мишка»">
+      </a>
+
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню навигации"></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item user-list__item--search">
+            <a class="user-list__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item user-list__item--cart">
+            <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="promo">
+      <h1 class="page-title">Каталог товаров</h1>
+    </div>
+    <section class="catalog">
+      <h2 class="visually-hidden">Список товаров</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item product-card">
+          <a class="product-card__link" href="#">
+            <img class="product-card" src="http://placehold.it/260x195" width="260" height="195" alt="">
+          </a>
+          <div class="product-card__details">
+            <div class="product-card__header">
+              <a class="product-card__link" href="#">
+                <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
+              </a>
+              <p class="product-card__info">Рост 30 см, вес 200 г</p>
+            </div>
+
+            <div class="product-card__footer">
+              <b class="product-card__price">1 200 руб.</b>
+              <a href="" class="product-card__buy"></a>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item product-card">
+          <a class="product-card__link" href="#">
+            <img class="product-card" src="http://placehold.it/260x195" width="260" height="195" alt="">
+          </a>
+          <div class="product-card__details">
+            <div class="product-card__header">
+              <a class="product-card__link" href="#">
+                <h2 class="product-card__title">Корзина для белья</h2>
+              </a>
+              <p class="product-card__info">Диаметр 15 см, высота 10 см</p>
+            </div>
+
+            <div class="product-card__footer">
+              <b class="product-card__price">690 руб.</b>
+              <a href="" class="product-card__buy"></a>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item product-card">
+          <a class="product-card__link" href="#">
+            <img class="product-card" src="http://placehold.it/260x195" width="260" height="195" alt="">
+          </a>
+          <div class="product-card__details">
+            <div class="product-card__header">
+              <a class="product-card__link" href="#">
+                <h2 class="product-card__title">Большая корзина для игрушек</h2>
+              </a>
+              <p class="product-card__info">Диаметр 30 см, высота 30 см</p>
+            </div>
+
+            <div class="product-card__footer">
+              <b class="product-card__price">1 500 руб.</b>
+              <a href="" class="product-card__buy"></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <ul class="page-footer__social social-list">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--instagram" href="#"></a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--facebook" href="#"></a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--twitter" href="#"></a>
+      </li>
+    </ul>
+    <div class="page-footer__developer">
+      <b class="page-footer__developer-label">Разработано</b>
+      <a class="page-footer__developer-logo" href="#"></a>
+    </div>
+  </footer>
+  <div class="overlay"></div>
+  <section class="to-cart">
+    <h2 class="to-cart__title">Добавить в корзину</h2>
+    <form class="to-cart__options product-options" action="http://echo.htmlacademy.ru">
+      <p class="product-options__name">Выберите размер:</p>
+      <div class="product-options__controls options-controls">
+        <button class="options-controls__btn btn" type="button">S</button>
+        <button class="options-controls__btn btn" type="button">M</button>
+        <button class="options-controls__btn btn" type="button">L</button>
+      </div>
+      <button class="to-cart__submit-btn btn" type="submit">Добавить</button>
+    </form>
+  </section>
+</body>
+
+</html>
