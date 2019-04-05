@@ -1,0 +1,15 @@
+/* Общие стили */
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+
+@import "vendors/normalize.scss";
+@import "blocks/base.scss";
+@import "blocks/btn.scss";
+
+/* Блоки */
+
+@import "blocks/promo.scss";
+@import "blocks/page-title.scss";
+@import "blocks/site-list.scss";
+@import "blocks/user-list.scss";
