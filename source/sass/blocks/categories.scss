@@ -1,0 +1,16 @@
+.categories__list {
+  @include normalize-list();
+}
+
+.categories__item {
+  @include font-set(19px, 24px, 700);
+  background-color: $secondary-color;
+
+  &--toys {
+    background-color: $secondary-color--dark;
+  }
+}
+
+.categories__link {
+  color: $white;
+}

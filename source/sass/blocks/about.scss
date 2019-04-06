@@ -1,0 +1,4 @@
+.about__title {
+  @include font-set(25px, 30px, 700);
+  color: $title-color;
+}

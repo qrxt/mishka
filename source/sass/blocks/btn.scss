@@ -1,0 +1,5 @@
+.btn {
+  @include font-set(17px, 20px, 700);
+  color: $primary-color;
+  text-transform: uppercase;
+}

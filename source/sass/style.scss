@@ -1,4 +1,5 @@
 /* Общие стили */
+
 @import "variables.scss";
 @import "mixins.scss";
 @import "fonts.scss";
@@ -13,3 +14,20 @@
 @import "blocks/page-title.scss";
 @import "blocks/site-list.scss";
 @import "blocks/user-list.scss";
+
+@import "blocks/categories.scss";
+
+@import "blocks/leader.scss";
+@import "blocks/product-details.scss";
+
+@import "blocks/about.scss";
+@import "blocks/advantages-list.scss";
+
+@import "blocks/reviews.scss";
+@import "blocks/review.scss";
+@import "blocks/slides-controls.scss";
+
+@import "blocks/contacts.scss";
+
+@import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";

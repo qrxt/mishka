@@ -1,0 +1,14 @@
+.contacts__title {
+  @include font-set(18px, 30px, 700);
+  color: $title-color;
+}
+
+.contacts__data {
+  @include font-set(15px, 30px);
+  color: $primary-color;
+}
+
+.contacts__btn {
+  @include font-set(18px, 20px, 700);
+  color: $primary-color;
+}

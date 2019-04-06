@@ -1,0 +1,10 @@
+.review {
+  margin: 0;
+}
+
+.review__message {
+  margin: 0;
+
+  @include font-set(15px, 30px);
+  color: $primary-color;
+}

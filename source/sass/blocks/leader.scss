@@ -1,0 +1,25 @@
+.leader__link {
+  color: $black;
+}
+
+.leader__title {
+  @include font-set(25px, 30px, 700);
+  color: $title-color;
+}
+
+.leader__label {
+  @include font-set(17px, 20px, 700);
+  color: $secondary-color;
+  text-transform: uppercase;
+}
+
+.leader__description {
+  margin: 0;
+  @include font-set(15px, 24px);
+  color: $primary-color;
+}
+
+.leader__price {
+  @include font-set(17px, 24px, 700);
+  color: $primary-color;
+}
