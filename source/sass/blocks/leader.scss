@@ -8,6 +8,7 @@
 
 .leader__title {
   margin: 0;
+
   @include font-set(25px, 30px, 700);
   color: $title-color;
 }
@@ -20,6 +21,7 @@
 
 .leader__description {
   margin: 0;
+
   @include font-set(15px, 24px);
   color: $primary-color;
 }

@@ -1,15 +1,15 @@
 html {
   height: 100%;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
-  -webkit-box-sizing: inherit;
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-body{
+body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;

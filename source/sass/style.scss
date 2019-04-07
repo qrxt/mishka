@@ -1,10 +1,9 @@
 /* Общие стили */
 
+@import "vendors/normalize.scss";
 @import "variables.scss";
 @import "mixins.scss";
 @import "fonts.scss";
-
-@import "vendors/normalize.scss";
 @import "blocks/base.scss";
 @import "blocks/btn.scss";
 @import "blocks/visually-hidden.scss";
@@ -17,31 +16,21 @@
 @import "blocks/page-description.scss";
 @import "blocks/site-list.scss";
 @import "blocks/user-list.scss";
-
 @import "blocks/categories.scss";
-
 @import "blocks/leader.scss";
 @import "blocks/product-details.scss";
-
 @import "blocks/about.scss";
 @import "blocks/advantages-list.scss";
-
 @import "blocks/reviews.scss";
 @import "blocks/review.scss";
 @import "blocks/slides-controls.scss";
-
 @import "blocks/contacts.scss";
-
 @import "blocks/page-footer.scss";
 @import "blocks/social-list.scss";
-
 @import "blocks/catalog.scss";
 @import "blocks/product-card.scss";
-
 @import "blocks/production.scss";
-
 @import "blocks/to-cart.scss";
-
 @import "blocks/order.scss";
 @import "blocks/order-form.scss";
 @import "blocks/radio-list.scss";

@@ -4,6 +4,7 @@
 
 .contacts__title {
   margin: 0;
+
   @include font-set(18px, 30px, 700);
   color: $title-color;
 }
