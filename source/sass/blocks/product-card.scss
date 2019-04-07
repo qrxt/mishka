@@ -1,0 +1,21 @@
+.product-card {
+  border: 1px solid #ececec;
+}
+
+.product-card__link-title {
+  color: $title-color;
+}
+
+.product-card__title {
+  @include font-set(17px, 24px, 700);
+}
+
+.product-card__info {
+  @include font-set(13px, 30px);
+  color: $primary-color;
+}
+
+.product-card__price {
+  @include font-set(15px, 24px, 700);
+  color: $title-color;
+}

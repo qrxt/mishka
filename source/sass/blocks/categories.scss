@@ -1,3 +1,7 @@
+.categories {
+  margin-bottom: 30px;
+}
+
 .categories__list {
   @include normalize-list();
 }

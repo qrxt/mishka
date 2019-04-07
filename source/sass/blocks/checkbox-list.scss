@@ -1,0 +1,8 @@
+.checkbox-list {
+  @include normalize-list();
+}
+
+.checkbox-list__label {
+  @include font-set(17px, 18px, 700);
+  color: $title-color;
+}

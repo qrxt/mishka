@@ -1,0 +1,17 @@
+.field-list {
+  @include normalize-list();
+}
+
+.field-list__input {
+  @include font-set(20px, 17px);
+  color: $primary-color;
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+}
+
+.field-list__label {
+  @include font-set(17px, 18px, 700);
+  color: $title-color;
+}

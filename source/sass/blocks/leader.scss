@@ -1,8 +1,13 @@
+.leader {
+  margin-bottom: 30px;
+}
+
 .leader__link {
   color: $black;
 }
 
 .leader__title {
+  margin: 0;
   @include font-set(25px, 30px, 700);
   color: $title-color;
 }

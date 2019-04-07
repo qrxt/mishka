@@ -1,0 +1,6 @@
+.page-description {
+  margin: 0 0 30px 0;
+
+  @include font-set(13px, 24px);
+  color: $primary-color;
+}

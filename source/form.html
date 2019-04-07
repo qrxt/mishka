@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="format-detection" content="telephone=no">
   <title>«Мишка» | Каталог</title>
-  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,22 +15,24 @@
         <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип «Мишка»">
       </a>
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню навигации"></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Вязание на заказ</a>
-        </li>
-      </ul>
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item user-list__item--search">
-          <a class="user-list__link" href="#">Поиск по сайту</a>
-        </li>
-        <li class="user-list__item user-list__item--cart">
-          <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
-        </li>
-      </ul>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item user-list__item--search">
+            <a class="user-list__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item user-list__item--cart">
+            <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -51,7 +53,7 @@
           <div class="order-form__wrapper">
             <ul class="order-form__list radio-list">
               <li class="radio-list__item">
-                <input class="radio-list__input" type="radio" name="type" value="accessory" id="accessory">
+                <input class="radio-list__input" type="radio" name="type" value="accessory" id="accessory" checked>
                 <label class="radio-list__label" for="accessory">Аксессуар для интерьера</label>
               </li>
               <li class="radio-list__item">
@@ -66,11 +68,11 @@
           <div class="order-form__wrapper">
             <ul class="order-form__list checkbox-list">
               <li class="checkbox-list__item">
-                <input class="checkbox-list__input" type="checkbox" name="type" value="white" id="white">
+                <input class="checkbox-list__input" type="checkbox" name="type" value="white" id="white" checked>
                 <label class="checkbox-list__label" for="white">Белый</label>
               </li>
               <li class="checkbox-list__item">
-                <input class="checkbox-list__input" type="checkbox" name="type" value="grey" id="grey">
+                <input class="checkbox-list__input" type="checkbox" name="type" value="grey" id="grey" checked>
                 <label class="checkbox-list__label" for="grey">Серый</label>
               </li>
               <li class="checkbox-list__item">
@@ -114,7 +116,7 @@
         <fieldset class="order-form__item">
           <legend class="order-form__title">Тел</legend>
           <p class="order-form__field">
-            <label class="order-form__label" for="phone-number">Телефонный номер</label>
+            <label class="order-form__label visually-hidden" for="phone-number">Телефонный номер</label>
             <input class="order-form__input order-form__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
               id="phone-number">
           </p>
@@ -131,7 +133,7 @@
           <textarea class="order-form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <div class="order-form__footer">
-          <small class="form-item__footnote">*Поля обязательны для заполнения</small>
+          <small class="order-form__footnote">*Поля обязательны для заполнения</small>
           <button class="order-form__btn btn" type="submit">Отправить заказ</button>
         </div>
       </form>

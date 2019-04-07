@@ -7,11 +7,14 @@
 @import "vendors/normalize.scss";
 @import "blocks/base.scss";
 @import "blocks/btn.scss";
+@import "blocks/visually-hidden.scss";
 
 /* Блоки */
 
+@import "blocks/main-nav.scss";
 @import "blocks/promo.scss";
 @import "blocks/page-title.scss";
+@import "blocks/page-description.scss";
 @import "blocks/site-list.scss";
 @import "blocks/user-list.scss";
 
@@ -31,3 +34,16 @@
 
 @import "blocks/page-footer.scss";
 @import "blocks/social-list.scss";
+
+@import "blocks/catalog.scss";
+@import "blocks/product-card.scss";
+
+@import "blocks/production.scss";
+
+@import "blocks/to-cart.scss";
+
+@import "blocks/order.scss";
+@import "blocks/order-form.scss";
+@import "blocks/radio-list.scss";
+@import "blocks/checkbox-list.scss";
+@import "blocks/field-list.scss";
