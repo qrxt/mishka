@@ -5,16 +5,16 @@
 .contacts__title {
   margin: 0;
 
-  @include font-set(18px, 30px, 700);
   color: $title-color;
+  @include font-set(18px, 30px, 700);
 }
 
 .contacts__data {
-  @include font-set(15px, 30px);
   color: $primary-color;
+  @include font-set(15px, 30px);
 }
 
 .contacts__btn {
-  @include font-set(18px, 20px, 700);
   color: $primary-color;
+  @include font-set(18px, 20px, 700);
 }

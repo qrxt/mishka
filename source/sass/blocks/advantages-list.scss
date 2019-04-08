@@ -3,6 +3,6 @@
 }
 
 .advantages-list__item {
-  @include font-set(17px, 20px, 700);
   color: $black;
+  @include font-set(17px, 20px, 700);
 }

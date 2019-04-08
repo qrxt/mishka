@@ -7,11 +7,11 @@
 }
 
 .production__info {
-  @include font-set(13px, 24px);
   color: $primary-color;
+  @include font-set(13px, 24px);
 }
 
 .production__btn {
-  @include font-set(17px, 16px, 700);
   color: $primary-color;
+  @include font-set(17px, 16px, 700);
 }

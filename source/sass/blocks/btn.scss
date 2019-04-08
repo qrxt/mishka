@@ -1,9 +1,9 @@
 .btn {
   padding: 10px 35px;
 
-  @include font-set(17px, 20px, 700);
   color: $primary-color;
   text-transform: uppercase;
-  border: 2px solid $primary-color;
+  border: $border;
   background-color: transparent;
+  @include font-set(17px, 20px, 700);
 }

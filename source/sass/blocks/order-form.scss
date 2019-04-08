@@ -5,18 +5,18 @@
 }
 
 .order-form__title {
-  @include font-set(17px, 16px, 700);
   color: $secondary-color;
   text-transform: uppercase;
+  @include font-set(17px, 16px, 700);
 }
 
 .order-form__input {
-  @include font-set(20px, 17px);
   color: $primary-color;
 
   &::placeholder {
     color: $placeholder-color;
   }
+  @include font-set(20px, 17px);
 }
 
 .order-form__textarea {
@@ -24,21 +24,21 @@
   height: 142px;
   resize: none;
 
-  @include font-set(17px, 18px);
   color: $primary-color;
   border: 2px solid $primary-color;
 
   &::placeholder {
     color: $placeholder-color;
   }
+  @include font-set(17px, 18px);
 }
 
 .order-form__footnote {
-  @include font-set(14px, 16px);
   color: $primary-color;
+  @include font-set(14px, 16px);
 }
 
 .order-form__btn {
-  @include font-set(17px, 16px, 700);
   color: $primary-color;
+  @include font-set(17px, 16px, 700);
 }

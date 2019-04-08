@@ -7,12 +7,12 @@
 }
 
 .categories__item {
-  @include font-set(19px, 24px, 700);
   background-color: $secondary-color;
 
   &--toys {
     background-color: $secondary-color--dark;
   }
+  @include font-set(19px, 24px, 700);
 }
 
 .categories__link {

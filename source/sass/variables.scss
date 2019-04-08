@@ -17,6 +17,12 @@ $placeholder-color: rgba(68, 68, 68, 0.3);
 $font-primary: "OpenSans", "Arial", sans-serif;
 $font-size: 15px;
 
+/* Обводка */
+
+$border-width: 2px;
+$border-type: solid;
+$border-color: $primary-color;
+$border: $border-width $border-type $border-color;
 /* Вьюпорты */
 
 $mobile-width: 320px;
