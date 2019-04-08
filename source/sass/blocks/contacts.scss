@@ -6,15 +6,18 @@
   margin: 0;
 
   color: $title-color;
+
   @include font-set(18px, 30px, 700);
 }
 
 .contacts__data {
   color: $primary-color;
+
   @include font-set(15px, 30px);
 }
 
 .contacts__btn {
   color: $primary-color;
+
   @include font-set(18px, 20px, 700);
 }

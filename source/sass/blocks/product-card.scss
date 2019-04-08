@@ -12,10 +12,12 @@
 
 .product-card__info {
   color: $primary-color;
+
   @include font-set(13px, 30px);
 }
 
 .product-card__price {
   color: $title-color;
+
   @include font-set(15px, 24px, 700);
 }

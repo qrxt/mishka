@@ -4,5 +4,6 @@
 
 .advantages-list__item {
   color: $black;
+
   @include font-set(17px, 20px, 700);
 }

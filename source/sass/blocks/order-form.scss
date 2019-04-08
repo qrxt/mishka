@@ -7,6 +7,7 @@
 .order-form__title {
   color: $secondary-color;
   text-transform: uppercase;
+
   @include font-set(17px, 16px, 700);
 }
 
@@ -16,6 +17,7 @@
   &::placeholder {
     color: $placeholder-color;
   }
+
   @include font-set(20px, 17px);
 }
 
@@ -30,15 +32,18 @@
   &::placeholder {
     color: $placeholder-color;
   }
+
   @include font-set(17px, 18px);
 }
 
 .order-form__footnote {
   color: $primary-color;
+
   @include font-set(14px, 16px);
 }
 
 .order-form__btn {
   color: $primary-color;
+
   @include font-set(17px, 16px, 700);
 }
