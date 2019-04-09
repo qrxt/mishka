@@ -1,0 +1,28 @@
+/* Цветовые переменные */
+
+$black: #000000;
+$white: #ffffff;
+$grey: #d3d2d2;
+$grey--light: #f1f1f1;
+
+$bg-color: $white;
+$title-color: #000000;
+$primary-color: #444444;
+$secondary-color: #63d1bb;
+$secondary-color--dark: #56c3b2;
+$placeholder-color: rgba(68, 68, 68, 0.3);
+
+/* Шрифтовые переменные */
+
+$font-primary: "OpenSans", "Arial", sans-serif;
+$font-size: 15px;
+
+/* Обводка */
+
+$border-width: 2px;
+$border-type: solid;
+$border-color: $primary-color;
+$border: $border-width $border-type $border-color;
+/* Вьюпорты */
+
+$mobile-width: 320px;

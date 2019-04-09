@@ -1,0 +1,9 @@
+.radio-list {
+  @include normalize-list();
+}
+
+.radio-list__label {
+  color: $title-color;
+
+  @include font-set(17px, 18px, 700);
+}

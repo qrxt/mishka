@@ -1,0 +1,16 @@
+.reviews {
+  margin-bottom: 45px;
+}
+
+.reviews__title {
+  margin: 0;
+  color: $title-color;
+
+  @include font-set(25px, 30px, 700);
+}
+
+.reviews__btn {
+  color: $primary-color;
+
+  @include font-set(18px, 20px, 700);
+}

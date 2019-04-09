@@ -1,0 +1,49 @@
+.order-form__item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.order-form__title {
+  color: $secondary-color;
+  text-transform: uppercase;
+
+  @include font-set(17px, 16px, 700);
+}
+
+.order-form__input {
+  color: $primary-color;
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+
+  @include font-set(20px, 17px);
+}
+
+.order-form__textarea {
+  width: 260px;
+  height: 142px;
+  resize: none;
+
+  color: $primary-color;
+  border: 2px solid $primary-color;
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+
+  @include font-set(17px, 18px);
+}
+
+.order-form__footnote {
+  color: $primary-color;
+
+  @include font-set(14px, 16px);
+}
+
+.order-form__btn {
+  color: $primary-color;
+
+  @include font-set(17px, 16px, 700);
+}

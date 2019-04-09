@@ -1,0 +1,11 @@
+.user-list {
+  @include normalize-list();
+}
+
+.user-list__item {
+  @include font-set(17px, 24px, 700);
+}
+
+.user-list__link {
+  color: $black;
+}

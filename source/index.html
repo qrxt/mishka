@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="format-detection" content="telephone=no">
   <title>«Мишка» - магазин изделий ручной работы</title>
-  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,22 +15,24 @@
         <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип «Мишка»">
       </a>
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню навигации"></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Вязание на заказ</a>
-        </li>
-      </ul>
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item user-list__item--search">
-          <a class="user-list__link" href="#">Поиск по сайту</a>
-        </li>
-        <li class="user-list__item user-list__item--cart">
-          <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
-        </li>
-      </ul>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item user-list__item--search">
+            <a class="user-list__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item user-list__item--cart">
+            <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -139,13 +141,13 @@
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
       <table class="contacts__data">
-        <tr>
-          <th>e-mail:</th>
-          <td>info@mimimishkashop.ru</td>
+        <tr class="contacts__row">
+          <th class="contacts__title">e-mail:</th>
+          <td class="contacts__info">info@mimimishkashop.ru</td>
         </tr>
-        <tr>
-          <th>адрес:</th>
-          <td>
+        <tr class="contacts__row">
+          <th class="contacts__title">адрес:</th>
+          <td class="contacts__info">
             г. Санкт-Петербург,
             ул. Большая Конюшенная,
             д. 19/8, офис 101

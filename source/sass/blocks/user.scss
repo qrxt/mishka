@@ -1,0 +1,12 @@
+.user__name {
+  margin: 0;
+  color: $title-color;
+
+  @include font-set(17px, 24px, 700);
+}
+
+.user__link {
+  color: $primary-color;
+
+  @include font-set(17px, 30px);
+}

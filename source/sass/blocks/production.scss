@@ -1,0 +1,19 @@
+.production {
+  margin-bottom: 60px;
+}
+
+.production__title {
+  @include font-set(17px, 24px, 700);
+}
+
+.production__info {
+  color: $primary-color;
+
+  @include font-set(13px, 24px);
+}
+
+.production__btn {
+  color: $primary-color;
+
+  @include font-set(17px, 16px, 700);
+}

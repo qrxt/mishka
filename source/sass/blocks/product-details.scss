@@ -1,0 +1,9 @@
+.product-details__item {
+  margin: 0;
+
+  @include font-set(15px, 20px);
+}
+
+.product-details__value {
+  margin: 0;
+}

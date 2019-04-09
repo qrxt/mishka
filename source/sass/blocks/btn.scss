@@ -1,0 +1,10 @@
+.btn {
+  padding: 10px 35px;
+
+  color: $primary-color;
+  text-transform: uppercase;
+  border: $border;
+  background-color: transparent;
+
+  @include font-set(17px, 20px, 700);
+}

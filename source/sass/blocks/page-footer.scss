@@ -1,0 +1,9 @@
+.page-footer {
+  background-color: $grey--light;
+}
+
+.page-footer__developer-label {
+  color: $title-color;
+
+  @include font-set(19px, 18px, 700);
+}
