@@ -1,0 +1,13 @@
+.page-header {
+  display: flex;
+  justify-content: center;
+  min-height: 79px; /* временно */
+  border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    justify-content: flex-start;
+    min-height: 90px; /* временно */
+  }
+}

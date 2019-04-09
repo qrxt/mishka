@@ -1,4 +1,7 @@
 .user-list {
+  display: flex;
+  flex-direction: column;
+
   @include normalize-list();
 }
 
@@ -8,4 +11,12 @@
 
 .user-list__link {
   color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+  }
 }

@@ -1,4 +1,7 @@
 .site-list {
+  display: flex;
+  flex-direction: column;
+
   @include normalize-list();
 }
 
@@ -8,4 +11,10 @@
 
 .site-list__link {
   color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+  }
 }

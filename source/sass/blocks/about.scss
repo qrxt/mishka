@@ -8,3 +8,13 @@
 
   @include font-set(25px, 30px, 700);
 }
+
+.about__wrapper {
+  padding: 0 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .about__wrapper {
+    padding: 0 50px;
+  }
+}

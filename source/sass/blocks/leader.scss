@@ -2,6 +2,25 @@
   margin-bottom: 30px;
 }
 
+.leader__wrapper {
+  padding: 0 30px;
+}
+
+.leader__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.leader__main {
+  display: flex;
+  flex-direction: column;
+}
+
+.leader__footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .leader__link {
   color: $black;
 }
@@ -31,4 +50,32 @@
   color: $primary-color;
 
   @include font-set(17px, 24px, 700);
+}
+
+@media (min-width: $tablet-width) {
+
+  .leader__wrapper {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .leader__header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .leader__main {
+    flex-direction: row;
+  }
+
+  .leader__footer {
+    flex-direction: column;
+  }
+
+  .leader-info {
+    display: flex;
+    flex-direction: column;
+  }
 }
