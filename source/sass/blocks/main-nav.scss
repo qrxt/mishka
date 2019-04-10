@@ -3,23 +3,12 @@
   flex-direction: column;
 }
 
-.main-nav__wrapper {
-  display: none;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
 .main-nav__list {
   display: flex;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    flex-direction: row;
-  }
-
-  .main-nav__wrapper {
-    display: flex;
     flex-direction: row;
   }
 
