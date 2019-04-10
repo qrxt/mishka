@@ -1,4 +1,8 @@
 .production {
+  padding: 0 30px;
+  height: 200px; /* временно */
+  display: flex;
+  flex-direction: column;
   margin-bottom: 60px;
 }
 
@@ -16,4 +20,29 @@
   color: $primary-color;
 
   @include font-set(17px, 16px, 700);
+}
+
+@media (min-width: $tablet-width) {
+  .production {
+    padding: 0 50px;
+  }
+
+  .production__title {
+    order: 2;
+  }
+
+  .production__video {
+    order: 1;
+  }
+
+  .production__info {
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }

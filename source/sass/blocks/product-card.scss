@@ -1,4 +1,6 @@
 .product-card {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #ececec;
 }
 
@@ -20,4 +22,16 @@
   color: $title-color;
 
   @include font-set(15px, 24px, 700);
+}
+
+@media (min-width: $tablet-width) {
+  .product-card {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    flex-direction: column;
+  }
 }

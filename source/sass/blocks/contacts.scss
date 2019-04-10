@@ -1,4 +1,7 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
   margin-bottom: 40px;
 }
 
@@ -16,8 +19,23 @@
   @include font-set(15px, 30px);
 }
 
+.contacts__body {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts__btn {
   color: $primary-color;
 
   @include font-set(18px, 20px, 700);
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding: 0 50px;
+  }
+
+  .contacts__body {
+    flex-direction: row;
+  }
 }

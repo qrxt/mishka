@@ -1,5 +1,26 @@
+.catalog {
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
 .catalog__list {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 30px;
 
   @include normalize-list();
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding: 0 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

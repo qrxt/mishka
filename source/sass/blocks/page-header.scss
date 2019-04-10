@@ -11,3 +11,9 @@
     min-height: 90px; /* временно */
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    order: 2;
+  }
+}

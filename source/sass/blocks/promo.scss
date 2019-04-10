@@ -9,8 +9,12 @@
   }
 }
 
+.promo:not(.promo--image) {
+  margin-bottom: 30px;
+}
+
 @media (min-width: $tablet-width) {
-  .promo {
+  .promo--image {
     min-height: 550px; /* временно */
   }
 }
