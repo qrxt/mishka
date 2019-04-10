@@ -35,3 +35,9 @@
     width: 335px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .categories__item {
+    width: 525px;
+  }
+}

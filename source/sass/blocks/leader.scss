@@ -62,7 +62,6 @@
 
   .leader__header {
     flex-direction: row;
-    justify-content: space-between;
   }
 
   .leader__main {
@@ -76,5 +75,15 @@
   .leader-info {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .leader__link {
+    order: 1;
+  }
+
+  .leader__label {
+    order: 0;
   }
 }
