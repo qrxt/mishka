@@ -1,13 +1,15 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
   margin-bottom: 40px;
+}
+
+.contacts__wrapper {
+  @include wrapper-props();
 }
 
 .contacts__title {
   margin: 0;
-
   color: $title-color;
 
   @include font-set(18px, 30px, 700);
@@ -30,12 +32,19 @@
   @include font-set(18px, 20px, 700);
 }
 
-@media (min-width: $tablet-width) {
-  .contacts {
-    padding: 0 50px;
-  }
+.contacts__location {
+  border: none;
+  width: 100%;
+}
 
+@media (min-width: $tablet-width) {
   .contacts__body {
     flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__location {
+    width: 525px;
   }
 }

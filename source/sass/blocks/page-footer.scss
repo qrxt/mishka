@@ -1,8 +1,6 @@
 .page-footer {
   display: flex;
-  position: relative;
-  height: 50px;
-  bottom: 0;
+  min-height: 50px;
   background-color: $grey--light;
 }
 

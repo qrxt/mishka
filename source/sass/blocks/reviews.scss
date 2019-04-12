@@ -1,6 +1,7 @@
 .reviews {
-  padding: 0 30px;
   margin-bottom: 45px;
+
+  @include wrapper-props();
 }
 
 .reviews__title {
@@ -14,10 +15,4 @@
   color: $primary-color;
 
   @include font-set(18px, 20px, 700);
-}
-
-@media (min-width: $tablet-width) {
-  .reviews {
-    padding: 0 50px;
-  }
 }

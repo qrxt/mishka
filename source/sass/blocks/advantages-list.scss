@@ -1,11 +1,9 @@
 .advantages-list {
-  display: flex;
-  flex-direction: column;
-
   @include normalize-list();
 }
 
 .advantages-list__item {
+  width: 100%;
   color: $black;
 
   @include font-set(17px, 20px, 700);
@@ -13,12 +11,14 @@
 
 @media (min-width: $tablet-width) {
   .advantages-list {
-    max-height: 120px; /* временно */
+    max-height: 60px; /* временно */
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .advantages-list__item {
-    width: 250px;
+    width: 50%;
   }
 }

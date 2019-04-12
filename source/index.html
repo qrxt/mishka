@@ -18,7 +18,6 @@
         <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип «Мишка»">
       </a>
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню навигации"></button>
-      <!-- <div class="main-nav__wrapper"> -->
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -35,7 +34,6 @@
           <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
         </li>
       </ul>
-      <!-- </div> -->
     </nav>
   </header>
 
@@ -121,50 +119,54 @@
       </div>
     </section>
     <section class="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
-      <blockquote class="reviews__slide review">
-        <p class="review__message">
-          Я молодая мама, но всё равно фотографии не набирали
-          и близко такого количества лайков,
-          как у популярных инстамамочек.
-          В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-          и мои фотографии сразу стали более стильными,
-          а также набирают больше лайков!
-        </p>
-        <footer class="review__author user">
-          <p class="user__name">Анастасия Красильникова</p>
-          <cite class="user__link">@misssssiskras</cite>
-        </footer>
-      </blockquote>
-      <div class="slides-controls">
-        <button class="slides-controls__item slides-controls__item--left" type="button"
-          aria-label="Предыдущий комментарий"></button>
-        <button class="slides-controls__item slides-controls__item--right" type="button"
-          aria-label="Следующий комментарий"></button>
+      <div class="reviews__wrapper">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__slider slider">
+          <blockquote class="reviews__slide review">
+            <p class="review__message">
+              Я молодая мама, но всё равно фотографии не набирали
+              и близко такого количества лайков,
+              как у популярных инстамамочек.
+              В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+              и мои фотографии сразу стали более стильными,
+              а также набирают больше лайков!
+            </p>
+            <footer class="review__author user">
+              <p class="user__name">Анастасия Красильникова</p>
+              <cite class="user__link">@misssssiskras</cite>
+            </footer>
+          </blockquote>
+          <div class="slider__controls">
+            <button class="slider__btn slider__btn--left" type="button" aria-label="Предыдущий комментарий"></button>
+            <button class="slider__btn slider__btn--right" type="button" aria-label="Следующий комментарий"></button>
+          </div>
+        </div>
+        <a class="reviews__btn btn">Написать</a>
       </div>
-      <a class="reviews__btn btn">Написать</a>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <table class="contacts__data">
-        <tbody class="contacts__body">
-          <tr class="contacts__row">
-            <th class="contacts__title">e-mail:</th>
-            <td class="contacts__info">info@mimimishkashop.ru</td>
-          </tr>
-          <tr class="contacts__row">
-            <th class="contacts__title">адрес:</th>
-            <td class="contacts__info">
-              г. Санкт-Петербург,
-              ул. Большая Конюшенная,
-              д. 19/8, офис 101
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <a class="contacts__location" href="#">
-        <img src="http://placehold.it/320x457" width="320" height="457" alt="Наш офис на карте">
-      </a>
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Контакты</h2>
+        <table class="contacts__data">
+          <tbody class="contacts__body">
+            <tr class="contacts__row">
+              <th class="contacts__title">e-mail:</th>
+              <td class="contacts__info">info@mimimishkashop.ru</td>
+            </tr>
+            <tr class="contacts__row">
+              <th class="contacts__title">адрес:</th>
+              <td class="contacts__info">
+                г. Санкт-Петербург,
+                ул. Большая Конюшенная,
+                д. 19/8, офис 101
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <iframe class="contacts__location"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018591306426!2d30.322127172090536!3d59.938717626614945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1555076055397!5m2!1sru!2sru"
+        width="322" height="457" allowfullscreen></iframe>
       <a class="contacts__btn btn" href="#">Напишите нам</a>
     </section>
   </main>

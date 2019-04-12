@@ -1,6 +1,5 @@
 .product-card {
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 15px;
   border: 1px solid #ececec;
 }
 
@@ -18,20 +17,37 @@
   @include font-set(13px, 30px);
 }
 
+.product-card__footer {
+  display: flex;
+}
+
 .product-card__price {
   color: $title-color;
 
   @include font-set(15px, 24px, 700);
 }
 
+.product-card__buy {
+  width: 20px;
+  height: 20px;
+  background-image: url("http://placehold.it/20x20");
+  background-repeat: no-repeat;
+}
+
 @media (min-width: $tablet-width) {
   .product-card {
-    flex-direction: row;
+    margin-bottom: 25px;
+    display: flex;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-card {
+    margin-bottom: 25px;
     flex-direction: column;
+  }
+
+  .product-card:not(:nth-child(3n)) {
+    margin-right: 50px;
   }
 }

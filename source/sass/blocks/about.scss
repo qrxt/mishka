@@ -10,11 +10,5 @@
 }
 
 .about__wrapper {
-  padding: 0 30px;
-}
-
-@media (min-width: $tablet-width) {
-  .about__wrapper {
-    padding: 0 50px;
-  }
+  @include wrapper-props();
 }

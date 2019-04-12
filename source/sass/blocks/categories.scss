@@ -3,13 +3,16 @@
 }
 
 .categories__list {
-  display: flex;
-  flex-direction: column;
-
   @include normalize-list();
+
+  width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .categories__item {
+  width: 100%;
   min-height: 103px; /* временно */
   background-color: $secondary-color;
 
@@ -32,12 +35,6 @@
   }
 
   .categories__item {
-    width: 335px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .categories__item {
-    width: 525px;
+    width: 50%;
   }
 }

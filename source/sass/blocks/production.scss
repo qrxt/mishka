@@ -45,4 +45,10 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+
+  .production__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }

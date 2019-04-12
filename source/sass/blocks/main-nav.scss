@@ -1,15 +1,15 @@
-.main-nav {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-nav__list {
-  display: flex;
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    flex-direction: row;
+    width: 1050px;
+    margin: 0 auto;
+
+    display: flex;
   }
 
   .main-nav__toggle {
