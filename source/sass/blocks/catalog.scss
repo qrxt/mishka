@@ -3,10 +3,10 @@
 }
 
 .catalog__list {
-  @include wrapper-props();
   margin-bottom: 15px;
 
-  @include normalize-list();
+  list-style: none;
+  @include wrapper-props();
 }
 
 @media (min-width: $tablet-width) {

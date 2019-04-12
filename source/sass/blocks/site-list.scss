@@ -9,6 +9,11 @@
   @include font-set(17px, 24px, 700);
 }
 
+.site-list__item:nth-child(3),
+.site-list__item:nth-child(4) {
+  display: none;
+}
+
 .site-list__link {
   color: $black;
 }

@@ -5,7 +5,7 @@
 .categories__list {
   @include normalize-list();
 
-  width: 1050px;
+  max-width: 1050px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
