@@ -4,6 +4,12 @@
   @include wrapper-props();
 }
 
+.reviews__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 .reviews__title {
   margin: 0;
   color: $title-color;
@@ -12,7 +18,14 @@
 }
 
 .reviews__btn {
+  order: -1;
   color: $primary-color;
 
   @include font-set(18px, 20px, 700);
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__btn {
+    align-self: flex-end;
+  }
 }

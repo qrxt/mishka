@@ -4,8 +4,8 @@
 
 .catalog__list {
   margin-bottom: 15px;
-
   list-style: none;
+
   @include wrapper-props();
 }
 

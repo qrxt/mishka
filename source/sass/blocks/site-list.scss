@@ -28,4 +28,9 @@
   .site-list {
     order: 1;
   }
+
+  .site-list__item:nth-child(3),
+  .site-list__item:nth-child(4) {
+    display: block;
+  }
 }
