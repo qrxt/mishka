@@ -34,6 +34,7 @@
 }
 
 .leader__price {
+  display: block;
   color: $primary-color;
 
   @include font-set(17px, 24px, 700);
@@ -52,11 +53,6 @@
 
   .leader__header {
     display: flex;
-  }
-
-  .leader__footer {
-    display: flex;
-    flex-direction: column;
   }
 
   .leader-info {
