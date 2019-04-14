@@ -30,6 +30,8 @@
 
 .product-card__footer {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product-card__price {
