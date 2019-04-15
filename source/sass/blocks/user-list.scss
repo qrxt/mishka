@@ -6,6 +6,9 @@
 }
 
 .user-list__item {
+  padding: 26px 30px 26px 75px;
+  border-bottom: 1px solid #ececec;
+
   @include font-set(17px, 24px, 700);
 }
 
@@ -17,7 +20,12 @@
   .user-list {
     flex-direction: row;
     flex-grow: 1;
-    width: 100%;
+    width: 50%;
+  }
+
+  .user-list__item {
+    padding: 30px 30px;
+    border: none;
   }
 }
 
