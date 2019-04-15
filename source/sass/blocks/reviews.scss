@@ -1,12 +1,8 @@
 .reviews {
   margin-bottom: 45px;
-
-  @include wrapper-props();
 }
 
-.reviews__wrapper {
-  display: flex;
-  flex-direction: column;
+.reviews__inner {
   position: relative;
 }
 
@@ -25,6 +21,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews__inner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
   .reviews__btn {
     align-self: flex-end;
   }
