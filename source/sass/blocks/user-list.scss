@@ -6,10 +6,40 @@
 }
 
 .user-list__item {
-  padding: 26px 30px 26px 75px;
+  padding: 27px 30px 28px 76px;
   border-bottom: 1px solid #ececec;
 
   @include font-set(17px, 24px, 700);
+
+  &--search,
+  &--cart {
+    position: relative;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 32px;
+    left: 35px;
+
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
+  &--search::before {
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/icon-search.svg");
+  }
+
+  &--cart::before {
+    top: 30px;
+    left: 32px;
+    width: 21px;
+    height: 18px;
+    background-image: url("../img/icon-cart.svg");
+  }
 }
 
 .user-list__link {

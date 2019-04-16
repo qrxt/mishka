@@ -1,5 +1,9 @@
+.user {
+  margin-bottom: 30px;
+}
+
 .user__name {
-  margin: 0;
+  margin: 0 0 3px;
   color: $title-color;
 
   @include font-set(17px, 24px, 700);
@@ -7,6 +11,7 @@
 
 .user__link {
   color: $primary-color;
+  font-style: normal;
 
   @include font-set(17px, 30px);
 }

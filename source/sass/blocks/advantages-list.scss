@@ -4,9 +4,54 @@
 
 .advantages-list__item {
   width: 100%;
+  padding-top: 57px;
+  margin-bottom: 28px;
+  max-width: 200px;
   color: $black;
 
+  background-repeat: no-repeat;
+
+
   @include font-set(17px, 20px, 700);
+
+  &--eco {
+    max-width: 180px;
+    background-image: url("../img/icon-feature-flower.svg");
+    background-size: 32px 37px;
+    background-position: 7px 2px;
+  }
+
+  &--price {
+    background-image: url("../img/icon-feature-money.svg");
+    background-size: 47px 27px;
+    background-position: 0 3px;
+  }
+
+  &--like {
+    background-image: url("../img/icon-feature-heart.svg");
+    background-size: 34px 27px;
+    background-position: 7px 8px;
+  }
+
+  &--cute {
+    max-width: 210px;
+    background-image: url("../img/icon-feature-ball.svg");
+    background-size: 35px 34px;
+    background-position: 3px 6px;
+  }
+
+  &--support {
+    max-width: 255px;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-size: 55px 23px;
+    background-position: -6px 6px;
+  }
+
+  &--gift {
+    background-image: url("../img/icon-feature-gift.svg");
+    background-size: 33px 32px;
+    background-position: 3px 4px;
+  }
 }
 
 @media (min-width: $tablet-width) {

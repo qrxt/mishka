@@ -1,5 +1,8 @@
 .reviews {
-  margin-bottom: 45px;
+  margin-bottom: 38px;
+  padding-bottom: 50px;
+
+  @include zig-zag-bottom;
 }
 
 .reviews__inner {
@@ -7,13 +10,16 @@
 }
 
 .reviews__title {
-  margin: 0;
+  margin: 0 0 24px;
   color: $title-color;
 
   @include font-set(25px, 30px, 700);
 }
 
 .reviews__btn {
+  width: 100%;
+  text-align: center;
+  padding: 15px 35px;
   order: -1;
   color: $primary-color;
 

@@ -3,7 +3,7 @@
 }
 
 .review__message {
-  margin: 0;
+  margin: 0 0 28px;
   color: $primary-color;
 
   @include font-set(15px, 30px);

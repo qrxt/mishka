@@ -1,5 +1,5 @@
 .categories {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .categories__list {
@@ -12,12 +12,41 @@
 }
 
 .categories__item {
+  position: relative;
   width: 100%;
+  padding: 27px 150px 30px 29px;
   min-height: 103px; /* временно */
   background-color: $secondary-color;
 
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    opacity: 0.15;
+  }
+
+  &--interior::after {
+    top: 23px;
+    right: 36px;
+    width: 40px;
+    height: 62px;
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+  }
+
   &--toys {
     background-color: $secondary-color--dark;
+  }
+
+  &--toys::after {
+    top: 21px;
+    right: 27px;
+    background-image: url("../../img/icon-toy.svg");
   }
 
   @include font-set(19px, 24px, 700);

@@ -1,3 +1,39 @@
 .social-list {
   @include normalize-list();
+
+  display: flex;
+  width: 260px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid grey; /* временный цвет */
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.social-list__link {
+  display: block;
+  width: 22px;
+  height: 21px;
+  background-repeat: no-repeat;
+
+  &--instagram {
+    background-image: url("../img/icon-insta.svg");
+  }
+
+  &--facebook {
+    background-image: url("../img/icon-fb.svg");
+    width: 15px;
+    height: 28px;
+  }
+
+  &--twitter {
+    width: 23px;
+    height: 20px;
+    background-image: url("../img/icon-twitter.svg");
+  }
 }

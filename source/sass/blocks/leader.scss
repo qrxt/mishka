@@ -1,5 +1,9 @@
 .leader {
-  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 41px;
+  margin-bottom: 28px;
+
+  @include zig-zag-bottom;
 }
 
 .leader__wrapper {
@@ -8,18 +12,25 @@
   @include wrapper-props();
 }
 
+.leader__photo-link {
+  display: block;
+  margin-bottom: 18px;
+}
+
 .leader__link {
   color: $black;
 }
 
 .leader__title {
-  margin: 0;
+  margin: 0 0 5px;
   color: $title-color;
 
   @include font-set(25px, 30px, 700);
 }
 
 .leader__label {
+  display: block;
+  margin-bottom: 24px;
   color: $secondary-color;
   text-transform: uppercase;
 
@@ -27,7 +38,7 @@
 }
 
 .leader__description {
-  margin: 0;
+  margin: 0 0 28px;
   color: $primary-color;
 
   @include font-set(15px, 24px);
@@ -35,6 +46,8 @@
 
 .leader__price {
   display: block;
+  margin-bottom: 26px;
+  text-align: center;
   color: $primary-color;
 
   @include font-set(17px, 24px, 700);
@@ -42,6 +55,8 @@
 
 .leader__btn {
   width: 100%;
+  padding: 15px 35px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {

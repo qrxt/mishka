@@ -1,13 +1,31 @@
 .slider__controls {
+  /*
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 140px;
+  */
+  display: flex;
+  width: 100%;
+  margin-bottom: 38px;
 }
 
 .slider__btn {
+  /*
   width: 50px;
   height: 26px;
-  background-color: transparent;
+  */
+  width: 50%;
+  height: 51px;
   border: 1px solid #ececec;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--left {
+    background-image: url("../../img/icon-left-arrow.svg");
+  }
+
+  &--right {
+    background-image: url("../../img/icon-right-arrow.svg");
+  }
 }

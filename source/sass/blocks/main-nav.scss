@@ -10,6 +10,10 @@
   position: absolute;
   top: 30px;
   right: 30px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
