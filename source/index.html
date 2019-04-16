@@ -6,40 +6,50 @@
   <meta name="format-detection" content="telephone=no">
   <title>«Мишка» - магазин изделий ручной работы</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="theme-color" content="#63d1bb">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
 </head>
 
 <body>
   <header class="page-header">
     <nav class="main-nav">
       <a class="page-header__logo">
-        <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип «Мишка»">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип «Мишка»">
       </a>
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню навигации"></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item user-list__item--search">
-            <a class="user-list__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="user-list__item user-list__item--cart">
-            <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="new.html">Новые поступления</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="sale-out.html">Распродажа</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item user-list__item--search">
+          <a class="user-list__link" href="#">Поиск по сайту</a>
+        </li>
+        <li class="user-list__item user-list__item--cart">
+          <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
 
   <main class="page-main">
     <div class="promo promo--image">
-      <h1 class="page-title">Милые штуки ручной работы для дома</h1>
+      <div class="promo__wrapper">
+        <p class="promo__label">Бесплатная доставка по России</p>
+        <h1 class="page-title">Милые штуки ручной<br> работы для дома</h1>
+      </div>
     </div>
     <section class="categories">
       <h2 class="visually-hidden">Категории товаров</h2>
@@ -115,67 +125,74 @@
       </div>
     </section>
     <section class="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
-      <blockquote class="reviews__slide review">
-        <p class="review__message">
-          Я молодая мама, но всё равно фотографии не набирали
-          и близко такого количества лайков,
-          как у популярных инстамамочек.
-          В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-          и мои фотографии сразу стали более стильными,
-          а также набирают больше лайков!
-        </p>
-        <footer class="review__author user">
-          <p class="user__name">Анастасия Красильникова</p>
-          <cite class="user__link">@misssssiskras</cite>
-        </footer>
-      </blockquote>
-      <div class="slides-controls">
-        <button class="slides-controls__item slides-controls__item--left" type="button"
-          aria-label="Предыдущий комментарий"></button>
-        <button class="slides-controls__item slides-controls__item--right" type="button"
-          aria-label="Следующий комментарий"></button>
+      <div class="reviews__inner wrapper">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__slider slider">
+          <blockquote class="reviews__slide review">
+            <p class="review__message">
+              Я молодая мама, но всё равно фотографии не набирали
+              и близко такого количества лайков,
+              как у популярных инстамамочек.
+              В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+              и мои фотографии сразу стали более стильными,
+              а также набирают больше лайков!
+            </p>
+            <footer class="review__author user">
+              <p class="user__name">Анастасия Красильникова</p>
+              <cite class="user__link">@misssssiskras</cite>
+            </footer>
+          </blockquote>
+          <div class="slider__controls">
+            <button class="slider__btn slider__btn--left" type="button" aria-label="Предыдущий комментарий"></button>
+            <button class="slider__btn slider__btn--right" type="button" aria-label="Следующий комментарий"></button>
+          </div>
+        </div>
+        <a class="reviews__btn btn">Написать</a>
       </div>
-      <a class="reviews__btn btn">Написать</a>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <table class="contacts__data">
-        <tr class="contacts__row">
-          <th class="contacts__title">e-mail:</th>
-          <td class="contacts__info">info@mimimishkashop.ru</td>
-        </tr>
-        <tr class="contacts__row">
-          <th class="contacts__title">адрес:</th>
-          <td class="contacts__info">
-            г. Санкт-Петербург,
-            ул. Большая Конюшенная,
-            д. 19/8, офис 101
-          </td>
-        </tr>
-      </table>
-      <a class="contacts__location" href="#">
-        <img src="http://placehold.it/320x457" width="320" height="457" alt="Наш офис на карте">
-      </a>
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Контакты</h2>
+        <table class="contacts__data">
+          <tbody class="contacts__body">
+            <tr class="contacts__row">
+              <th class="contacts__title">e-mail:</th>
+              <td class="contacts__info">info@mimimishkashop.ru</td>
+            </tr>
+            <tr class="contacts__row">
+              <th class="contacts__title">адрес:</th>
+              <td class="contacts__info">
+                г. Санкт-Петербург,
+                ул. Большая Конюшенная,
+                д. 19/8, офис 101
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <iframe class="contacts__location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018591306426!2d30.322127172090536!3d59.938717626614945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1555076055397!5m2!1sru!2sru"
+        width="322" height="457" allowfullscreen></iframe>
       <a class="contacts__btn btn" href="#">Напишите нам</a>
     </section>
   </main>
 
   <footer class="page-footer">
-    <ul class="page-footer__social social-list">
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--instagram" href="#"></a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--facebook" href="#"></a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--twitter" href="#"></a>
-      </li>
-    </ul>
-    <div class="page-footer__developer">
-      <b class="page-footer__developer-label">Разработано</b>
-      <a class="page-footer__developer-logo" href="#"></a>
+    <div class="page-footer__wrapper">
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--instagram" href="#"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="#"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--twitter" href="#"></a>
+        </li>
+      </ul>
+      <div class="page-footer__developer">
+        <b class="page-footer__developer-label">Разработано</b>
+        <a class="page-footer__developer-logo" href="#"></a>
+      </div>
     </div>
   </footer>
 </body>

@@ -2,7 +2,13 @@
   margin-bottom: 60px;
 }
 
+.production__wrapper {
+  @include wrapper-props();
+}
+
 .production__title {
+  margin: 0;
+
   @include font-set(17px, 24px, 700);
 }
 
@@ -12,8 +18,48 @@
   @include font-set(13px, 24px);
 }
 
+.production__video {
+  outline: 1px solid purple;
+}
+
 .production__btn {
   color: $primary-color;
 
   @include font-set(17px, 16px, 700);
+}
+
+@media (min-width: $tablet-width) {
+  .production__video {
+    width: 100%;
+    order: -1;
+  }
+
+  .production__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .production__btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production__wrapper {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .production__video {
+    position: absolute;
+    left: 50px;
+    top: 0;
+    width: 682px;
+  }
+
+  .production__info {
+    width: 250px;
+    align-self: flex-end;
+  }
 }

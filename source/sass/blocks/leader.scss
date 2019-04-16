@@ -2,6 +2,12 @@
   margin-bottom: 30px;
 }
 
+.leader__wrapper {
+  position: relative;
+
+  @include wrapper-props();
+}
+
 .leader__link {
   color: $black;
 }
@@ -28,7 +34,46 @@
 }
 
 .leader__price {
+  display: block;
   color: $primary-color;
 
   @include font-set(17px, 24px, 700);
+}
+
+.leader__btn {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .leader__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .leader__header {
+    display: flex;
+  }
+
+  .leader-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .leader__photo {
+    position: absolute;
+    top: 0;
+    right: 50px;
+  }
+
+  .leader__btn {
+    width: 290px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .leader__label {
+    order: -1;
+  }
 }

@@ -4,40 +4,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="format-detection" content="telephone=no">
-  <title>«Мишка» | Каталог</title>
+  <title>«Мишка» | Заказ</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="theme-color" content="#63d1bb">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
 </head>
 
 <body>
   <header class="page-header">
     <nav class="main-nav">
-      <a class="page-header__logo">
-        <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип «Мишка»">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип «Мишка»">
       </a>
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню навигации"></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item user-list__item--search">
-            <a class="user-list__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="user-list__item user-list__item--cart">
-            <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="new.html">Новые поступления</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="sale-out.html">Распродажа</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item user-list__item--search">
+          <a class="user-list__link" href="#">Поиск по сайту</a>
+        </li>
+        <li class="user-list__item user-list__item--cart">
+          <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <main class="page-main">
     <div class="promo">
+      <p class="promo__label">Бесплатная доставка по России</p>
       <h1 class="page-title">Вязание на заказ</h1>
     </div>
     <p class="page-description">
@@ -45,7 +53,7 @@
       Заполните простую форму заказа и мы свяжемся с вами,
       чтобы уточнить детали.
     </p>
-    <section class="order">
+    <section class="order wrapper">
       <h2 class="visually-hidden">Форма заказа</h2>
       <form class="order__form order-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="order-form__item">
@@ -117,8 +125,7 @@
           <legend class="order-form__title">Тел</legend>
           <p class="order-form__field">
             <label class="order-form__label visually-hidden" for="phone-number">Телефонный номер</label>
-            <input class="order-form__input order-form__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-              id="phone-number">
+            <input class="order-form__input order-form__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="phone-number">
           </p>
         </fieldset>
         <fieldset class="order-form__item">
@@ -141,20 +148,22 @@
   </main>
 
   <footer class="page-footer">
-    <ul class="page-footer__social social-list">
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--instagram" href="#"></a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--facebook" href="#"></a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--twitter" href="#"></a>
-      </li>
-    </ul>
-    <div class="page-footer__developer">
-      <b class="page-footer__developer-label">Разработано</b>
-      <a class="page-footer__developer-logo" href="#"></a>
+    <div class="page-footer__wrapper">
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--instagram" href="#"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="#"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--twitter" href="#"></a>
+        </li>
+      </ul>
+      <div class="page-footer__developer">
+        <b class="page-footer__developer-label">Разработано</b>
+        <a class="page-footer__developer-logo" href="#"></a>
+      </div>
     </div>
   </footer>
 </body>

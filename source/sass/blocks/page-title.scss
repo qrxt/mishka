@@ -1,6 +1,7 @@
 .page-title {
   margin: 0;
   font-family: $font-primary;
+  text-align: center;
 
   @include font-set(27px, 30px, 700);
 }

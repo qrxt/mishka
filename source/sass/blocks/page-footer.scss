@@ -1,5 +1,11 @@
 .page-footer {
+  display: flex;
+  min-height: 50px;
   background-color: $grey--light;
+}
+
+.page-footer__wrapper {
+  @include wrapper-props();
 }
 
 .page-footer__developer-label {

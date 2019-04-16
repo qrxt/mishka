@@ -1,5 +1,22 @@
-.catalog__list {
+.catalog {
   margin-bottom: 30px;
+}
 
-  @include normalize-list();
+.catalog__list {
+  margin-bottom: 15px;
+  list-style: none;
+
+  @include wrapper-props();
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+  }
 }
