@@ -13,11 +13,12 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип «Мишка»">
       </a>
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню навигации"></button>
+      <button class="main-nav__toggle main-nav__toggle--closed" type="button"
+        aria-label="Открыть меню навигации"></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -196,6 +197,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

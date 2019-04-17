@@ -12,8 +12,32 @@
   right: 30px;
   background-color: transparent;
   border: none;
-  background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+    outline: none;
+  }
+
+  &--closed {
+    background-image: url("../img/icon-menu-open.svg");
+  }
+
+  &--opened {
+    background-image: url("../img/icon-menu-close.svg");
+  }
+}
+
+@media(max-width: calc($tablet-width - 1)) {
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
 }
 
 @media (min-width: $tablet-width) {

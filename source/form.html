@@ -13,11 +13,12 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип «Мишка»">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип «Мишка»">
       </a>
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню навигации"></button>
+      <button class="main-nav__toggle main-nav__toggle--closed" type="button"
+        aria-label="Открыть меню навигации"></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -125,7 +126,8 @@
           <legend class="order-form__title">Тел</legend>
           <p class="order-form__field">
             <label class="order-form__label visually-hidden" for="phone-number">Телефонный номер</label>
-            <input class="order-form__input order-form__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="phone-number">
+            <input class="order-form__input order-form__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+              id="phone-number">
           </p>
         </fieldset>
         <fieldset class="order-form__item">
@@ -166,6 +168,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
