@@ -28,6 +28,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .promo {
+    padding: 16px 50px 92px 33px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: center 100%;
+    background-repeat: repeat-x;
+    background-size: auto 23px;
+  }
+
+  .promo:not(.promo--image) {
+    margin-bottom: 68px;
+  }
+
   .promo--image {
     min-height: 550px; /* временно */
   }
@@ -35,7 +48,7 @@
   .promo__label {
     display: block;
     padding-left: 60%;
-    margin-bottom: 120px;
+    margin-bottom: 55px;
   }
 }
 
