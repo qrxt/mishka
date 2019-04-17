@@ -1,6 +1,6 @@
 .product-card {
   width: 260px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   border: 1px solid #ececec;
 }
 
@@ -10,7 +10,7 @@
 
 .product-card__link-title {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
   color: $title-color;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .product-card__header {
-  padding: 22px 35px 0 27px;
+  padding: 21px 35px 0 27px;
 }
 
 .product-card__footer {
@@ -42,7 +42,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 22px 25px 28px 28px;
+  padding: 22px 25px 28px 26px;
 }
 
 .product-card__price {

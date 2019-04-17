@@ -2,27 +2,35 @@
   margin-bottom: 60px;
 }
 
-.production__wrapper {
-  @include wrapper-props();
+.production__inner {
+  border: 1px solid #ececec;
 }
 
 .production__title {
   margin: 0;
+  padding: 22px 40px 25px 89px;
+
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  background-position: 34px calc(50% - 3px);
 
   @include font-set(17px, 24px, 700);
 }
 
 .production__info {
+  padding: 24px 33px 33px;
   color: $primary-color;
 
   @include font-set(13px, 24px);
 }
 
-.production__video {
-  outline: 1px solid purple;
+.production__description {
+  margin: 0 0 28px;
 }
 
 .production__btn {
+  width: 100%;
+  padding: 15px 23px 17px;
   color: $primary-color;
 
   @include font-set(17px, 16px, 700);
