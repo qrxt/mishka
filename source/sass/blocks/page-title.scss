@@ -8,8 +8,6 @@
 
 @media (min-width: $tablet-width) {
   .page-title {
-    margin-left: 16px;
-
     @include font-set(43px, 50px, 700);
   }
 }

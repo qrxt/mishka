@@ -34,3 +34,10 @@
   background-repeat: repeat-x;
   background-position: bottom;
 }
+
+@mixin zig-zag-fill-bottom {
+  background-image: url("../img/bg-zigzag-fill.svg");
+  background-position: center 100%;
+  background-repeat: repeat-x;
+  background-size: auto 23px;
+}
