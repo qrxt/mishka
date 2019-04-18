@@ -38,9 +38,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .production__title {
+    padding: 39px 40px 25px 105px;
+    background-position: 41px calc(50% + 5px);
+
+    @include font-set(20px, 24px, 700);
+  }
+
   .production__video {
     width: 100%;
     order: -1;
+  }
+
+  .production__info {
+    padding: 6px 39px 52px;
+  }
+
+  .production__description {
+    margin-bottom: 35px;
+
+    @include font-set(15px, 30px);
   }
 
   .production__inner {
