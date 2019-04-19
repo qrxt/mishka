@@ -46,6 +46,10 @@
   @include font-set(15px, 24px);
 }
 
+.leader__details {
+  margin-bottom: 28px;
+}
+
 .leader__price {
   display: block;
   margin-bottom: 26px;
@@ -63,6 +67,7 @@
 
 @media (min-width: $tablet-width) {
   .leader__wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -70,18 +75,58 @@
 
   .leader__header {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
   }
 
-  .leader-info {
-    display: flex;
-    flex-direction: column;
+  .leader__info {
+    width: 44%;
   }
 
+  .leader__title {
+    @include font-set(43px, 50px, 700);
+  }
+
+  .leader__label  {
+    margin: 12px 15px 0;
+    max-width: 100px;
+    text-align: center;
+
+    @include font-set(17px, 17px, 700);
+  }
+
+  .leader__description {
+    margin: 0 0 48px;
+
+    @include font-set(17px, 30px);
+  }
+
+  .leader__details {
+    margin-bottom: 57px;
+
+    @include font-set(15px, 20px);
+  }
+
+  .leader__photo-link {
+    position: absolute;
+    width: 41%;
+    bottom: 0px;
+    right: 50px;
+  }
 
   .leader__photo {
-    position: absolute;
-    top: 0;
-    right: 50px;
+    width: 100%;
+  }
+
+  .leader__footer {
+    width: 44%;
+  }
+
+  .leader__price {
+    padding-right: 6px;
+    margin-bottom: 34px;
+
+    @include font-set(20px, 24px, 700);
   }
 
   .leader__btn {
