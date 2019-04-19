@@ -8,3 +8,12 @@
 
   @include font-set(15px, 30px);
 }
+
+
+@media (min-width: $tablet-width) {
+  .review__message {
+    margin-bottom: 60px;
+
+    @include font-set(17px, 30px);
+  }
+}

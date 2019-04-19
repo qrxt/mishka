@@ -68,14 +68,45 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts__title {
+    margin: 0 0 50px -5px;
+
+    @include font-set(43px, 50px, 700);
+  }
+
+  .contacts__data {
+    width: 100%;
+    margin-bottom: 58px;
+  }
+
   .contacts__body {
     flex-direction: row;
   }
 
+  .contacts__row {
+    width: 50%;
+  }
+
+  .contacts__row--address .contacts__info {
+    width: 100%;
+  }
+
+  .contacts__name,
+  .contacts__info {
+    @include font-set(17px, 30px);
+  }
+
+  .contacts__location {
+    margin-bottom: 50px;
+  }
+
   .contacts__btn {
     display: block;
-    width: 250px;
+    width: 30%;
     margin: 0 auto;
+    padding: 15px 30px;
+
+    @include font-set(17px, 20px, 700);
   }
 }
 

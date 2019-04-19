@@ -66,6 +66,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .leader {
+    padding-bottom: 67px;
+    margin-bottom: 50px;
+    background-size: auto 15px;
+    background-position: 27px bottom;
+  }
+
   .leader__wrapper {
     position: relative;
     display: flex;
@@ -84,6 +91,8 @@
   }
 
   .leader__title {
+    margin-left: -4px;
+
     @include font-set(43px, 50px, 700);
   }
 
@@ -109,9 +118,10 @@
 
   .leader__photo-link {
     position: absolute;
-    width: 41%;
-    bottom: 0px;
+    width: 333px;
     right: 50px;
+    bottom: -5px;
+    margin: 0;
   }
 
   .leader__photo {

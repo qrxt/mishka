@@ -12,3 +12,11 @@
 .about__wrapper {
   @include wrapper-props();
 }
+
+@media (min-width: $tablet-width) {
+  .about__title {
+    margin: 0 0 47px -5px;
+
+    @include font-set(43px, 50px, 700);
+  }
+}

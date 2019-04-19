@@ -89,5 +89,14 @@
     padding: 28px 170px 28px 35px;
 
     @include font-set(20px, 30px, 700);
+
+    &--interior::after {
+      top: 29px;
+    }
+
+    &--toys::after {
+      top: 32px;
+      right: 35px;
+    }
   }
 }
