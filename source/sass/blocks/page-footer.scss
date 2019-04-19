@@ -1,11 +1,11 @@
 .page-footer {
   display: flex;
-  min-height: 50px;
+  justify-content: center;
   background-color: $grey--light;
 }
 
-.page-footer__wrapper {
-  @include wrapper-props();
+.page-footer__logo {
+  display: none;
 }
 
 .page-footer__developer {
@@ -27,4 +27,32 @@
   height: 34px;
   background-image: url("../../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 15%;
+    margin: 0;
+  }
+
+  .page-footer__logo-image {
+    width: 100%;
+  }
+
+  .page-footer__social {
+    align-items: flex-start;
+  }
+
+  .page-footer__developer {
+    padding-top: 8px;
+  }
 }

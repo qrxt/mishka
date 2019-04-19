@@ -3,11 +3,9 @@
 
   display: flex;
   align-items: center;
-  width: 260px;
   margin-top: 25px;
   margin-bottom: 20px;
-  padding-left: 57px;
-  padding-bottom: 25px;
+  padding: 0 0 25px 20px;
   border-bottom: 1px solid grey; /* временный цвет */
 }
 
@@ -35,5 +33,13 @@
     width: 23px;
     height: 20px;
     background-image: url("../img/icon-twitter.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    margin: 0 0 20px 0;
+    padding: 0 0 0 80px;
+    border: none;
   }
 }

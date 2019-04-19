@@ -68,6 +68,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    margin-bottom: 55px;
+  }
+
   .contacts__title {
     margin: 0 0 50px -5px;
 
