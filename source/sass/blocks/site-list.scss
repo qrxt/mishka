@@ -52,13 +52,29 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 45%;
+    width: 30%;
     order: 1;
   }
 
   .site-list__item {
-    padding: 30px;
+    padding: 31px 35px 34px 0;
     border: none;
+
+    @include font-set(17px, 24px, 700);
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &--additional {
+      padding: 18px 35px 34px 0;
+
+      @include font-set(15px, 24px, 700);
+    }
+
+    &--additional:not(:last-child) {
+      margin-right: 25px;
+    }
   }
 
   .site-list__item:nth-child(3),
