@@ -6,10 +6,8 @@
   @include zig-zag-bottom;
 }
 
-.leader__wrapper {
+.leader__inner {
   position: relative;
-
-  @include wrapper-props();
 }
 
 .leader__photo-link {
@@ -73,8 +71,7 @@
     background-position: 27px bottom;
   }
 
-  .leader__wrapper {
-    position: relative;
+  .leader__inner {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -166,5 +163,19 @@
 
   .leader__description {
     margin-bottom: 60px;
+  }
+
+  .leader__footer {
+    width: 28%;
+    margin: 51px 0 0 175px;
+  }
+
+  .leader__btn {
+    width: 100%;
+  }
+
+  .leader__photo-link {
+    width: 45%;
+    z-index: -1;
   }
 }

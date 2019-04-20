@@ -14,3 +14,9 @@
 .product-details__value {
   margin: 0;
 }
+
+@media (min-width: $desktop-width) {
+  .product-details__item {
+    padding-bottom: 11px;
+  }
+}
