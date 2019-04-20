@@ -11,3 +11,9 @@
     @include font-set(43px, 50px, 700);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    @include font-set(53px, 57px, 700);
+  }
+}

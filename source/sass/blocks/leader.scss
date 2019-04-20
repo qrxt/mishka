@@ -147,5 +147,24 @@
 @media (min-width: $desktop-width) {
   .leader__label {
     order: -1;
+    margin: 16px 43px 0 31px;
+
+    @include font-set(17px, 17px, 700);
+  }
+
+  .leader__header {
+    justify-content: flex-start;
+  }
+
+  .leader__title {
+    @include font-set(53px, 57px, 700);
+  }
+
+  .leader__info {
+    padding-left: 175px;
+  }
+
+  .leader__description {
+    margin-bottom: 60px;
   }
 }

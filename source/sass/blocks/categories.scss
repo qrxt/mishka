@@ -100,3 +100,19 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .categories {
+    margin-bottom: 120px;
+  }
+
+  .categories::after {
+    height: 34px;
+    background-size: auto 34px;
+    background-position: -13px;
+  }
+
+  .categories__item {
+    padding: 28px 320px 33px 35px
+  }
+}
