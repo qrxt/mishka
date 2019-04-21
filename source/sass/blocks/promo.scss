@@ -34,9 +34,7 @@
 
   .promo:not(.promo--image) {
     @include zig-zag-fill-bottom;
-  }
 
-  .promo:not(.promo--image) {
     margin-bottom: 68px;
   }
 
