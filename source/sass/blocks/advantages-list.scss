@@ -96,6 +96,16 @@
       order: 6;
       margin-bottom: 27px;
     }
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .advantages-list {
+    justify-content: flex-start;
+  }
+
+  .advantages-list__item {
+    width: 38%;
+    margin-right: 18px;
   }
 }

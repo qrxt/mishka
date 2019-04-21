@@ -77,3 +77,38 @@
     @include font-set(17px, 20px, 700);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    background-image: none;
+    padding-bottom: 135px;
+    margin-bottom: 90px;
+  }
+
+  .reviews::after {
+    height: 23px;
+    background-size: auto 23px;
+  }
+
+  .reviews__inner {
+    padding-left: 225px;
+    background-image: url("../img/review@1x.jpg");
+    background-size: 31% auto;
+    background-repeat: no-repeat;
+    background-position: 50px 5px;
+  }
+
+  .reviews__title {
+    @include font-set(53px, 57px, 700);
+  }
+
+  .reviews__slider {
+    padding-top: 45px;
+    padding-right: 90px;
+  }
+
+  .reviews__btn {
+    width: 20%;
+    margin-top: 7px;
+  }
+}

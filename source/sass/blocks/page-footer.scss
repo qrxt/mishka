@@ -40,7 +40,7 @@
 
   .page-footer__logo {
     display: block;
-    width: 15%;
+    width: 10%;
     margin: 0;
   }
 
@@ -50,9 +50,16 @@
 
   .page-footer__social {
     align-items: flex-start;
+    padding: 0 0 0 80px;
   }
 
   .page-footer__developer {
     padding-top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__developer {
+    padding-top: 5px;
   }
 }

@@ -142,6 +142,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .leader {
+    margin-bottom: 60px;
+    padding-bottom: 95px;
+    background-size: auto 23px;
+    background-position: 0px bottom;
+  }
+
   .leader__label {
     order: -1;
     margin: 16px 43px 0 31px;

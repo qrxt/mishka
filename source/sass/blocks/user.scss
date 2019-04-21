@@ -32,3 +32,9 @@
     @include font-set(17px, 30px);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .user__name {
+    @include font-set(17px, 24px, 700);
+  }
+}

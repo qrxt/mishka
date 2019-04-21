@@ -9,14 +9,20 @@
   @include font-set(25px, 30px, 700);
 }
 
-.about__wrapper {
-  @include wrapper-props();
-}
-
 @media (min-width: $tablet-width) {
   .about__title {
     margin: 0 0 47px -5px;
 
     @include font-set(43px, 50px, 700);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__inner {
+    padding-left: 225px;
+  }
+
+  .about__title {
+    @include font-set(53px, 57px, 700);
   }
 }
