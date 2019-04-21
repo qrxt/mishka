@@ -36,8 +36,7 @@
   }
 }
 
-
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .slider__controls {
     justify-content: flex-end;
     width: 15%;

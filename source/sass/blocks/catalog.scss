@@ -16,6 +16,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    margin-bottom: 32px;
+  }
+
   .catalog__list {
     display: flex;
   }

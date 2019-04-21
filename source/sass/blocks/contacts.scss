@@ -68,6 +68,18 @@
     margin-bottom: 55px;
   }
 
+  .contacts::before {
+    content: "";
+    display: block;
+    width: 47px;
+    height: 81px;
+    position: absolute;
+    right: 53px;
+    top: -15px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+  }
+
   .contacts__title {
     margin: 0 0 50px -5px;
 
@@ -117,6 +129,11 @@
     padding: 0;
     min-height: 457px; /* временно */
     margin-bottom: 105px;
+  }
+
+  .contacts::before {
+    left: 112px;
+    top: 63px;
   }
 
   .contacts__inner {

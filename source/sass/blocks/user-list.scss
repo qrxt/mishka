@@ -87,7 +87,9 @@
 @media (min-width: $desktop-width) {
   .user-list {
     align-items: flex-start;
-    width: 10%;
+    width: 399px;
+    margin-left: auto;
+    flex-grow: 0;
     order: 3;
   }
 

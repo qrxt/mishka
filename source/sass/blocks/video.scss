@@ -23,7 +23,21 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .video__preview {
     height: 453px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  .video__preview {
+    height: 100%;
   }
 }

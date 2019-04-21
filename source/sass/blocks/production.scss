@@ -1,5 +1,5 @@
 .production {
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .production__inner {
@@ -18,7 +18,7 @@
 }
 
 .production__info {
-  padding: 24px 33px 33px;
+  padding: 34px 33px 33px;
   color: $primary-color;
 
   @include font-set(13px, 24px);
@@ -71,21 +71,40 @@
 }
 
 @media (min-width: $desktop-width) {
-  .production__wrapper {
+  .production {
+    margin-bottom: 105px;
+  }
+
+  .production__inner {
+    flex-wrap: wrap;
+    align-content: flex-end;
     position: relative;
-    flex-direction: column;
-    align-items: flex-end;
+  }
+
+  .production__title {
+    width: 30%;
+    padding: 95px 50px 30px 25px;
+    background-position: 27px 40px;
   }
 
   .production__video {
     position: absolute;
-    left: 50px;
+    left: 0;
     top: 0;
-    width: 682px;
+    width: 65%;
   }
 
   .production__info {
-    width: 250px;
-    align-self: flex-end;
+    width: 30%;
+    padding: 2px 25px 0;
+  }
+
+  .production__description {
+    margin-bottom: 47px;
+  }
+
+  .production__btn {
+    width: 232px;
+    margin-bottom: 60px;
   }
 }

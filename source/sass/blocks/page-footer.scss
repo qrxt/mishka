@@ -40,7 +40,7 @@
 
   .page-footer__logo {
     display: block;
-    width: 10%;
+    width: 15%;
     margin: 0;
   }
 
@@ -54,11 +54,19 @@
   }
 
   .page-footer__developer {
-    padding-top: 8px;
+    padding-top: 7px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer__logo {
+    width: 10%;
+  }
+
+  .page-footer__inner {
+    padding-bottom: 30px;
+  }
+
   .page-footer__developer {
     padding-top: 5px;
   }

@@ -28,10 +28,9 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
-    width: 100%;
+    width: 60%;
     order: 2;
     flex-direction: row;
-    flex-grow: 1;
   }
 
   .site-list__item {
@@ -52,7 +51,8 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 10%;
+    width: 435px;
+    margin-right: auto;
     order: 1;
   }
 

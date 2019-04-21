@@ -67,6 +67,12 @@
     padding-bottom: 360px;
   }
 
+  .promo:not(.promo--image) {
+    margin-bottom: 114px;
+    padding: 16px 0 117px;
+    background-size: auto 34px;
+  }
+
   .promo__label {
     padding-left: 70%;
   }
