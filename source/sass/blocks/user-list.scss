@@ -1,5 +1,5 @@
 .user-list {
-  display: flex;
+  display: none;
   flex-direction: column;
 
   @include normalize-list();

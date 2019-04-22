@@ -45,7 +45,7 @@
   &--toys::after {
     top: 21px;
     right: 27px;
-    background-image: url("../../img/icon-toy.svg");
+    background-image: url("../img/icon-toy.svg");
   }
 
   @include font-set(19px, 24px, 700);

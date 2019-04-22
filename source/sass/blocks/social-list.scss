@@ -2,14 +2,19 @@
   @include normalize-list();
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 23px;
   margin-bottom: 22px;
-  padding: 0 0 25px 20px;
-  border-bottom: 1px solid grey; /* временный цвет */
+  padding: 0 42px 0 57px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-.social-list__item:not(:last-child) {
+.social-list__item {
+  margin-bottom: 25px;
+}
+
+.social-list__item:not(:nth-child(3n)) {
   margin-right: 41px;
 }
 
@@ -38,15 +43,16 @@
 
 @media (min-width: $tablet-width) {
   .social-list {
+    width: 235px;
     margin: 0 0 18px 0;
-    padding: 0 0 0 80px;
+    padding: 10px 0 0 87px;
     border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .social-list {
-    padding: 0 0 20px 75px;
+    padding: 7px 0px 20px 84px;
     margin: 0;
   }
 }

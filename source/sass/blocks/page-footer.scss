@@ -1,6 +1,4 @@
 .page-footer {
-  display: flex;
-  justify-content: center;
   background-color: $grey--light;
 }
 
@@ -35,6 +33,7 @@
     padding-bottom: 50px;
     width: 100%;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
   }
 

@@ -29,6 +29,10 @@
   text-align: left;
 }
 
+.contacts__info--email {
+  border-bottom: 1px solid $secondary-color;
+}
+
 .contacts__row {
   display: flex;
 
@@ -141,11 +145,18 @@
   }
 
   .contacts__title {
+    width: 40%;
+
     @include font-set(53px, 57px, 700);
   }
 
   .contacts__data {
+    width: 40%;
     margin-bottom: 82px;
+  }
+
+  .contacts__row {
+    width: 100%;
   }
 
   .contacts__location {
