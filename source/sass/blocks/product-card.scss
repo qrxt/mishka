@@ -40,15 +40,15 @@
 }
 
 .product-card:hover .product-card__details {
-  box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .product-card:focus-within .product-card__details {
-  box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .product-card__details:active {
-  box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .product-card__header {

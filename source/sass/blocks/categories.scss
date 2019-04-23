@@ -52,10 +52,6 @@
   background-color: $secondary-color;
 }
 
-.categories__item--toys .categories__link {
-  background-color: $secondary-color--dark;
-}
-
 .categories__item--interior .categories__link {
   &:hover,
   &:focus {
@@ -69,6 +65,8 @@
 }
 
 .categories__item--toys .categories__link {
+  background-color: $secondary-color--dark;
+
   &:hover,
   &:focus {
     background-color: #46c1ae;
