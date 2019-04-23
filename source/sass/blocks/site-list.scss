@@ -24,6 +24,8 @@
 
 .site-list__link {
   color: $black;
+
+  @include link-interaction;
 }
 
 @media (min-width: $tablet-width) {

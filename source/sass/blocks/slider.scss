@@ -12,6 +12,8 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @include link-interaction;
+
   &--left {
     background-image: url("../img/icon-left-arrow.svg");
   }

@@ -6,9 +6,11 @@
 
 .page-header__logo {
   display: block;
-  width: auto;
+  width: 27%;
   height: 35px;
   margin: 0 auto 22px;
+
+  @include link-interaction;
 }
 
 .page-header__logo-image {

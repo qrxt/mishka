@@ -27,6 +27,7 @@
   }
 }
 
+/* Декоративные элементы */
 
 @mixin zig-zag-bottom {
   background-image: url("../img/bg-zigzag-line.svg");
@@ -40,4 +41,18 @@
   background-position: center 100%;
   background-repeat: repeat-x;
   background-size: auto 23px;
+}
+
+/* Состояния интерактивных элементов */
+
+@mixin link-interaction {
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

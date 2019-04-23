@@ -14,8 +14,6 @@
 .categories__item {
   position: relative;
   width: 100%;
-  padding: 27px 150px 30px 29px;
-  background-color: $secondary-color;
 
   &::after {
     content: "";
@@ -38,10 +36,6 @@
     background-repeat: no-repeat;
   }
 
-  &--toys {
-    background-color: $secondary-color--dark;
-  }
-
   &--toys::after {
     top: 21px;
     right: 27px;
@@ -52,7 +46,38 @@
 }
 
 .categories__link {
+  display: block;
+  padding: 27px 150px 30px 29px;
   color: $white;
+  background-color: $secondary-color;
+}
+
+.categories__item--toys .categories__link {
+  background-color: $secondary-color--dark;
+}
+
+.categories__item--interior .categories__link {
+  &:hover,
+  &:focus {
+    background-color: #59d5bc;
+  }
+
+  &:active {
+    background-color: #59d5bc;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.categories__item--toys .categories__link {
+  &:hover,
+  &:focus {
+    background-color: #46c1ae;
+  }
+
+  &:active {
+    background-color: #46c1ae;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -84,7 +109,6 @@
 
   .categories__item {
     width: 50%;
-    padding: 28px 170px 28px 35px;
 
     @include font-set(20px, 30px, 700);
 
@@ -96,6 +120,10 @@
       top: 32px;
       right: 35px;
     }
+  }
+
+  .categories__link {
+    padding: 28px 170px 28px 35px;
   }
 }
 
@@ -110,7 +138,7 @@
     background-position: -13px;
   }
 
-  .categories__item {
+  .categories__link {
     padding: 28px 320px 33px 35px;
   }
 }

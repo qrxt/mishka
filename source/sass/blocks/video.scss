@@ -19,7 +19,25 @@
 
   background-color: transparent;
   background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   border: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    width: 121px;
+    height: 93px;
+    top: calc(50% - 46px);
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.6;
+    width: 80px;
+    height: 61px;
+    top: calc(50% - 30px);
+  }
 }
 
 @media (min-width: $tablet-width) {
