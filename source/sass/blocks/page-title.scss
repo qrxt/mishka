@@ -5,3 +5,15 @@
 
   @include font-set(27px, 30px, 700);
 }
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    @include font-set(43px, 50px, 700);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    @include font-set(53px, 57px, 700);
+  }
+}

@@ -13,12 +13,13 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35"
-          alt="Логотип «Мишка»">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип «Мишка»">
       </a>
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню навигации"></button>
+      <button class="main-nav__toggle burger-menu" type="button" aria-label="Открыть меню навигации">
+        <span class="burger-menu__button-middle"></span>
+      </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -26,10 +27,10 @@
         <li class="site-list__item">
           <a class="site-list__link" href="form.html">Вязание на заказ</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--additional">
           <a class="site-list__link" href="new.html">Новые поступления</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--additional">
           <a class="site-list__link" href="sale-out.html">Распродажа</a>
         </li>
       </ul>
@@ -46,15 +47,17 @@
 
   <main class="page-main">
     <div class="promo">
-      <p class="promo__label">Бесплатная доставка по России</p>
-      <h1 class="page-title">Каталог товаров</h1>
+      <div class="promo__wrapper">
+        <p class="promo__label">Бесплатная доставка по России</p>
+        <h1 class="page-title">Каталог товаров</h1>
+      </div>
     </div>
     <section class="catalog">
       <h2 class="visually-hidden">Список товаров</h2>
       <ul class="catalog__list">
         <li class="catalog__item product-card">
           <a class="product-card__link" href="#">
-            <img class="product-card__image" src="http://placehold.it/260x195" width="260" height="195"
+            <img class="product-card__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195"
               alt="Зайчик-попрыгайчик">
           </a>
           <div class="product-card__details">
@@ -73,13 +76,13 @@
         </li>
         <li class="catalog__item product-card">
           <a class="product-card__link" href="#">
-            <img class="product-card__image" src="http://placehold.it/260x195" width="260" height="195"
+            <img class="product-card__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195"
               alt="Корзина для белья">
           </a>
           <div class="product-card__details">
             <div class="product-card__header">
               <a class="product-card__link-title" href="#">
-                <h3 class="product-card__title">Корзина для белья</h3>
+                <h3 class="product-card__title">Корзинка для белья</h3>
               </a>
               <p class="product-card__info">Диаметр 15 см, высота 10 см</p>
             </div>
@@ -92,13 +95,13 @@
         </li>
         <li class="catalog__item product-card">
           <a class="product-card__link" href="#">
-            <img class="product-card__image" src="http://placehold.it/260x195" width="260" height="195"
+            <img class="product-card__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195"
               alt="Большая корзина для игрушек">
           </a>
           <div class="product-card__details">
             <div class="product-card__header">
               <a class="product-card__link-title" href="#">
-                <h3 class="product-card__title">Большая корзина для игрушек</h3>
+                <h3 class="product-card__title">Большая корзинка для игрушек</h3>
               </a>
               <p class="product-card__info">Диаметр 30 см, высота 30 см</p>
             </div>
@@ -111,11 +114,11 @@
         </li>
       </ul>
     </section>
-    <section class="production">
-      <div class="production__wrapper">
+    <section class="production wrapper">
+      <div class="production__inner">
         <h2 class="production__title">Процесс производства</h2>
         <div class="production__video video">
-          <img class="video__preview" src="http://placehold.it/260x150" width="260" height="150"
+          <img class="video__preview" src="img/video-mobile@1x.jpg" width="260" height="150"
             alt="Видео с процессом производства">
           <button class="video__play" type="button"></button>
         </div>
@@ -132,7 +135,10 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__inner wrapper">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="102" height="34" alt="Логотип «Мишка»">
+      </a>
       <ul class="page-footer__social social-list">
         <li class="social-list__item">
           <a class="social-list__link social-list__link--instagram" href="#"></a>
@@ -163,6 +169,8 @@
       <button class="to-cart__submit-btn btn" type="submit">Добавить</button>
     </form>
   </section>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

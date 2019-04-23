@@ -1,15 +1,72 @@
 .page-footer {
-  display: flex;
-  min-height: 50px;
   background-color: $grey--light;
 }
 
-.page-footer__wrapper {
-  @include wrapper-props();
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__developer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
 .page-footer__developer-label {
   color: $title-color;
+  margin-right: 30px;
 
   @include font-set(19px, 18px, 700);
+}
+
+.page-footer__developer-logo {
+  width: 27px;
+  height: 34px;
+  background-image: url("../../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 15%;
+    margin: 0;
+  }
+
+  .page-footer__logo-image {
+    width: 100%;
+  }
+
+  .page-footer__social {
+    align-items: flex-start;
+    padding: 0 0 0 80px;
+  }
+
+  .page-footer__developer {
+    padding-top: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo {
+    width: 10%;
+  }
+
+  .page-footer__inner {
+    padding-bottom: 30px;
+  }
+
+  .page-footer__developer {
+    padding-top: 5px;
+  }
 }

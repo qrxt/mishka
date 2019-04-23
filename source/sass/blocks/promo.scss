@@ -1,12 +1,14 @@
 .promo {
   position: relative;
-  padding: 20px 35px 70px;
+  padding: 69px 35px 77px 33px;
   background-color: $grey--light;
 
   &--image {
+    padding: 70px 35px 125px;
+
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center -20px;
   }
 }
 
@@ -26,20 +28,54 @@
 }
 
 @media (min-width: $tablet-width) {
+  .promo {
+    padding: 16px 0 92px;
+  }
+
+  .promo:not(.promo--image) {
+    @include zig-zag-fill-bottom;
+
+    margin-bottom: 68px;
+  }
+
   .promo--image {
-    min-height: 550px; /* временно */
+    padding: 16px 0 0;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center -2px;
+    background-color: #f9f9f9;
+  }
+
+  .promo--image .promo__wrapper {
+    padding-bottom: 377px;
   }
 
   .promo__label {
     display: block;
     padding-left: 60%;
-    margin-bottom: 120px;
+    margin-bottom: 55px;
+  }
+
+  .promo--image .promo__label {
+    margin-bottom: 110px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .promo--image .promo__wrapper {
+    padding-bottom: 360px;
+  }
+
+  .promo:not(.promo--image) {
+    margin-bottom: 114px;
+    padding: 16px 0 117px;
+    background-size: auto 34px;
+  }
+
   .promo__label {
-    margin: 0 0 0 auto;
     padding-left: 70%;
+  }
+
+  .promo--image .promo__label {
+    margin-bottom: 114px;
   }
 }

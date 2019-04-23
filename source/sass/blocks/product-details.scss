@@ -1,9 +1,22 @@
 .product-details__item {
-  margin: 0;
+  display: flex;
+  margin: 0 0 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
 
   @include font-set(15px, 20px);
 }
 
+.product-details__name {
+  min-width: 98px;
+}
+
 .product-details__value {
   margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .product-details__item {
+    padding-bottom: 11px;
+  }
 }
