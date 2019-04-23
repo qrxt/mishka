@@ -26,36 +26,15 @@
 
 .main-nav__toggle {
   width: 20px;
-  height: 2px;
+  height: 14px;
   position: absolute;
-  top: 38px;
+  top: 32px;
   right: 31px;
-  background-color: $black;
-  border: none;
 
   &:active,
   &:focus {
     opacity: 0.3;
     outline: none;
-  }
-
-  &::before,
-  &::after {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 2px;
-    position: absolute;
-    right: 0px;
-    background-color: $black;
-  }
-
-  &::before {
-    top: -6px;
-  }
-
-  &::after {
-    top: 6px;
   }
 }
 
