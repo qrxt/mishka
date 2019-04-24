@@ -32,10 +32,15 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
-    background-size: 46%;
+    background-size: 350px auto;
 
     padding-bottom: 82px;
     margin-bottom: 81px;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/review@2x.jpg");
+    }
   }
 
   .reviews::after {
@@ -81,7 +86,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     background-image: none;
-    padding-bottom: 135px;
+    padding-bottom: 70px;
     margin-bottom: 90px;
   }
 
@@ -92,8 +97,9 @@
 
   .reviews__inner {
     padding-left: 225px;
+    padding-bottom: 65px;
     background-image: url("../img/review@1x.jpg");
-    background-size: 31% auto;
+    background-size: 350px auto;
     background-repeat: no-repeat;
     background-position: 50px 5px;
   }

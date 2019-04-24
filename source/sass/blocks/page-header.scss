@@ -9,13 +9,10 @@
   width: 27%;
   height: 35px;
   margin: 0 auto 22px;
-
-  @include link-interaction;
 }
 
-.page-header__logo-image {
-  display: block;
-  margin: 0 auto;
+.page-header__logo:not(.page-header__logo--index) {
+  @include link-interaction;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,7 +28,7 @@
     margin: 22px 0 0 0;
   }
 
-  .page-header__logo-image {
+  .page-header__logo img {
     width: 112px;
     height: 46px;
   }
@@ -39,6 +36,14 @@
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
+    width: 149px;
+    height: 72px;
+    margin: 10px 15px 0;
     order: 2;
+  }
+
+  .page-header__logo img {
+    width: 149px;
+    height: 72px;
   }
 }

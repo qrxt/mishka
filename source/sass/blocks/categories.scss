@@ -50,6 +50,10 @@
   padding: 27px 150px 30px 29px;
   color: $white;
   background-color: $secondary-color;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .categories__item--interior .categories__link {
@@ -121,7 +125,11 @@
   }
 
   .categories__link {
-    padding: 28px 170px 28px 35px;
+    padding: 28px 55% 28px 35px;
+  }
+
+  .categories__item--toys .categories__link {
+    padding: 28px 61% 28px 35px;
   }
 }
 

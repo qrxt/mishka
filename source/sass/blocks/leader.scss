@@ -116,13 +116,16 @@
   .leader__photo-link {
     position: absolute;
     width: 333px;
+    height: 404px;
     right: 50px;
-    bottom: -5px;
+    bottom: 0px;
     margin: 0;
   }
 
-  .leader__photo {
-    width: 100%;
+  .leader__photo-link img {
+    display: block;
+    width: 333px;
+    height: auto;
   }
 
   .leader__footer {
@@ -157,6 +160,7 @@
   }
 
   .leader__header {
+    z-index: 2;
     justify-content: flex-start;
   }
 
@@ -182,7 +186,14 @@
   }
 
   .leader__photo-link {
-    width: 45%;
-    z-index: -1;
+    width: 525px;
+    height: 636px;
+    z-index: 0;
+    bottom: 0;
+  }
+
+  .leader__photo-link img {
+    width: 525px;
+    height: auto;
   }
 }

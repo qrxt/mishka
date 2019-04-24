@@ -36,6 +36,7 @@ $mobile-max-width: 767px;
 
 $desktop-wrapper-width: 1150px;
 
-/* Временные переменные */
+/* Retina */
 
-$debug-outline: 1px solid red;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
