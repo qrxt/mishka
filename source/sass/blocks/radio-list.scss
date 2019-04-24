@@ -2,8 +2,20 @@
   @include normalize-list();
 }
 
+.radio-list__item {
+  min-height: 40px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
 .radio-list__label {
+  display: block;
+  padding: 10px 0 0 62px;
   color: $title-color;
 
   @include font-set(17px, 18px, 700);
+}
+
+.radio-list__input {
+  display: none;
 }

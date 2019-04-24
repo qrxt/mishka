@@ -28,8 +28,12 @@
   text-align: right;
 }
 
-.promo:not(.promo--image) {
+.promo--catalog {
   margin-bottom: 30px;
+}
+
+.promo--form {
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {

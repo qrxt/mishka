@@ -50,7 +50,7 @@
   </header>
 
   <main class="page-main">
-    <div class="promo">
+    <div class="promo promo--form">
       <p class="promo__label">Бесплатная доставка по России</p>
       <h1 class="page-title">Вязание на заказ</h1>
     </div>
@@ -59,12 +59,12 @@
       Заполните простую форму заказа и мы свяжемся с вами,
       чтобы уточнить детали.
     </p>
-    <section class="order wrapper">
+    <section class="order">
       <h2 class="visually-hidden">Форма заказа</h2>
       <form class="order__form order-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="order-form__item">
-          <legend class="order-form__title">Тип</legend>
-          <div class="order-form__wrapper">
+          <div class="order-form__wrapper wrapper">
+            <h2 class="order-form__title">Тип</h2>
             <ul class="order-form__list radio-list">
               <li class="radio-list__item">
                 <input class="radio-list__input" type="radio" name="type" value="accessory" id="accessory" checked>
@@ -78,8 +78,8 @@
           </div>
         </fieldset>
         <fieldset class="order-form__item">
-          <legend class="order-form__title">Цвет</legend>
-          <div class="order-form__wrapper">
+          <div class="order-form__wrapper wrapper">
+            <h2 class="order-form__title">Цвет</h2>
             <ul class="order-form__list checkbox-list">
               <li class="checkbox-list__item">
                 <input class="checkbox-list__input" type="checkbox" name="type" value="white" id="white" checked>
@@ -108,9 +108,9 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="order-form__item">
-          <legend class="order-form__title">ФИО</legend>
-          <div class="order-form__wrapper">
+        <fieldset class="order-form__item order-form__item--username">
+          <div class="order-form__wrapper wrapper">
+            <h2 class="order-form__title">ФИО</h2>
             <ul class="order-form__list field-list">
               <li class="field-list__item">
                 <label class="field-list__label" for="first-name">Имя:</label>
@@ -128,23 +128,30 @@
           </div>
         </fieldset>
         <fieldset class="order-form__item">
-          <legend class="order-form__title">Тел</legend>
-          <p class="order-form__field">
-            <label class="order-form__label visually-hidden" for="phone-number">Телефонный номер</label>
-            <input class="order-form__input order-form__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-              id="phone-number">
-          </p>
+          <div class="order-form__wrapper wrapper">
+            <h2 class="order-form__title">Тел</h2>
+            <p class="order-form__field">
+              <label class="order-form__label visually-hidden" for="phone-number">Телефонный номер</label>
+              <input class="order-form__input order-form__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+                id="phone-number">
+            </p>
+          </div>
         </fieldset>
         <fieldset class="order-form__item">
-          <legend class="order-form__title">E-mail</legend>
-          <p class="order-form__field">
-            <label class="order-form__label visually-hidden" for="email"></label>
-            <input class="order-form__input order-form__input--email" type="email" placeholder="Ваш Email*" id="email">
-          </p>
+          <div class="order-form__wrapper wrapper">
+            <h2 class="order-form__title">E-mail</h2>
+            <p class="order-form__field">
+              <label class="order-form__label visually-hidden" for="email"></label>
+              <input class="order-form__input order-form__input--email" type="email" placeholder="Ваш Email*"
+                id="email">
+            </p>
+          </div>
         </fieldset>
         <fieldset class="order-form__item">
-          <legend class="order-form__title">Доп</legend>
-          <textarea class="order-form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <div class="order-form__wrapper wrapper">
+            <h2 class="order-form__title">Доп</h2>
+            <textarea class="order-form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
         </fieldset>
         <div class="order-form__footer">
           <small class="order-form__footnote">*Поля обязательны для заполнения</small>

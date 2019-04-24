@@ -1,18 +1,29 @@
 .field-list {
   @include normalize-list();
+
+  padding-top: 2px;
+}
+
+.field-list__item:not(:last-child) {
+  margin-bottom: 37px;
 }
 
 .field-list__input {
+  border: none;
   color: $primary-color;
 
   &::placeholder {
     color: $placeholder-color;
+
+    @include font-set(17px, 18px);
   }
 
   @include font-set(20px, 17px);
 }
 
 .field-list__label {
+  display: block;
+  margin-bottom: 10px;
   color: $title-color;
 
   @include font-set(17px, 18px, 700);

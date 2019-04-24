@@ -2,8 +2,20 @@
   @include normalize-list();
 }
 
+.checkbox-list__item {
+  min-height: 40px;
+  margin-bottom: 21px;
+  display: flex;
+}
+
 .checkbox-list__label {
+  display: block;
+  padding: 12px 0 0 62px;
   color: $title-color;
 
   @include font-set(17px, 18px, 700);
+}
+
+.checkbox-list__input {
+  display: none;
 }

@@ -1,14 +1,31 @@
 .order-form__item {
-  margin: 0;
+  margin: 0 0 15px 0;
   padding: 0;
   border: none;
+
+  &--username {
+    margin-bottom: 44px;
+  }
 }
 
 .order-form__title {
+  position: relative;
+  margin: 0 0 25px 0;
   color: $secondary-color;
   text-transform: uppercase;
 
   @include font-set(17px, 16px, 700);
+}
+
+.order-form__title::after {
+  content: "";
+  display: block;
+  width: 198px;
+  height: 1px;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 1px);
+  background-color: $secondary-color;
 }
 
 .order-form__input {
