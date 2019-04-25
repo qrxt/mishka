@@ -1,13 +1,11 @@
 .leader {
   position: relative;
-  padding-bottom: 40px;
   margin-bottom: 28px;
-
-  @include zig-zag-bottom;
 }
 
 .leader__inner {
   position: relative;
+  padding-bottom: 40px;
 }
 
 .leader__photo-link {
@@ -17,6 +15,7 @@
   margin-bottom: 18px;
 
   @include link-interaction;
+  @include transition(opacity, 1s, $ease-out-quart);
 }
 
 .leader__link {
@@ -69,16 +68,14 @@
 
 @media (min-width: $tablet-width) {
   .leader {
-    padding-bottom: 67px;
     margin-bottom: 50px;
-    background-size: auto 15px;
-    background-position: 27px bottom;
   }
 
   .leader__inner {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-bottom: 67px;
   }
 
   .leader__header {
@@ -122,7 +119,7 @@
     width: 333px;
     height: 404px;
     right: 50px;
-    bottom: 0px;
+    bottom: 65px;
     margin: 0;
   }
 
@@ -151,9 +148,10 @@
 @media (min-width: $desktop-width) {
   .leader {
     margin-bottom: 60px;
+  }
+
+  .leader__inner {
     padding-bottom: 95px;
-    background-size: auto 23px;
-    background-position: 0 bottom;
   }
 
   .leader__label {
@@ -193,7 +191,7 @@
     width: 525px;
     height: 636px;
     z-index: 0;
-    bottom: 0;
+    bottom: 96px;
   }
 
   .leader__photo-link img {
