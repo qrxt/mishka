@@ -6,6 +6,10 @@
   display: none;
 }
 
+.page-footer__logo:not(.page-footer__logo--index) {
+  @include link-interaction;
+}
+
 .page-footer__developer {
   display: flex;
   justify-content: center;
