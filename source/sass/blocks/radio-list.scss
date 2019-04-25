@@ -49,8 +49,12 @@
 .radio-list__input:hover ~ .radio-list__label::before,
 .radio-list__input:focus ~ .radio-list__label::before {
   border: 1px solid $secondary-color;
+
+  @include transition(border, 0.3s, $ease-out-quart);
 }
 
 .radio-list__input:active ~ .radio-list__label::before {
   border: 1px solid rgba($primary-color, 0.3);
+
+  @include transition(border, 0.15s, $ease-out-quart);
 }

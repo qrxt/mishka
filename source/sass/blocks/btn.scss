@@ -13,8 +13,11 @@
 
   &:hover,
   &:focus {
+    outline: none;
     color: $white;
     background-color: $primary-color;
+
+    @include transition(background-color, 0.25s, $ease-out-quart);
   }
 
   &:active {

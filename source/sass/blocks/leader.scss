@@ -15,10 +15,14 @@
   width: 260px;
   margin: 0 auto;
   margin-bottom: 18px;
+
+  @include link-interaction;
 }
 
 .leader__link {
   color: $black;
+
+  @include link-interaction;
 }
 
 .leader__title {

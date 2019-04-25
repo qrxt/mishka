@@ -41,14 +41,20 @@
 
 .product-card:hover .product-card__details {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+
+  @include transition(box-shadow, 0.15s, $ease-out-quart);
 }
 
 .product-card:focus-within .product-card__details {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+
+  @include transition(box-shadow, 0.15s, $ease-out-quart);
 }
 
 .product-card__details:active {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+
+  @include transition(box-shadow, 0.15s, $ease-out-quart);
 }
 
 .product-card__header {
@@ -92,6 +98,11 @@
     display: block;
     height: 334px;
     width: 50%;
+
+    &:hover,
+    &:focus {
+      outline: none;
+    }
   }
 
   .product-card__image {

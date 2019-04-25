@@ -54,6 +54,11 @@
   &:focus {
     outline: none;
   }
+
+  &:hover,
+  &:focus {
+    @include transition(background-color, 0.25s, $ease-out-quart);
+  }
 }
 
 .categories__item--interior .categories__link {

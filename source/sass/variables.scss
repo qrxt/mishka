@@ -40,3 +40,7 @@ $desktop-wrapper-width: 1150px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
+
+/* Transition Timing Functions */
+
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
