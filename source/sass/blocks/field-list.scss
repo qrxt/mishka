@@ -5,11 +5,14 @@
 }
 
 .field-list__item:not(:last-child) {
-  margin-bottom: 37px;
+  margin-bottom: 21px;
 }
 
 .field-list__input {
+  padding: 3px 0 12px 0;
+  width: 100%;
   border: none;
+  border-bottom: 2px solid black;
   color: $primary-color;
 
   &::placeholder {

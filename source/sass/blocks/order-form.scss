@@ -1,11 +1,28 @@
 .order-form__item {
-  margin: 0 0 15px 0;
+  margin: 0 0 32px 0;
   padding: 0;
   border: none;
 
-  &--username {
-    margin-bottom: 44px;
+  &--type,
+  &--color {
+    margin-bottom: 15px;
   }
+
+  &--additional {
+    margin-bottom: 12px;
+  }
+}
+
+.order-form__item--phone .order-form__title {
+  margin-bottom: 15px;
+}
+
+.order-form__item--email .order-form__title {
+  margin-bottom: 15px;
+}
+
+.order-form__field {
+  margin: 0;
 }
 
 .order-form__title {
@@ -41,6 +58,7 @@
 .order-form__textarea {
   width: 260px;
   height: 142px;
+  padding: 15px;
   resize: none;
 
   color: $primary-color;
@@ -54,12 +72,16 @@
 }
 
 .order-form__footnote {
+  display: block;
+  margin-bottom: 32px;
   color: $primary-color;
 
   @include font-set(14px, 16px);
 }
 
 .order-form__btn {
+  width: 100%;
+  padding: 16px 35px;
   color: $primary-color;
 
   @include font-set(17px, 16px, 700);

@@ -29,7 +29,7 @@
           <a class="site-list__link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          <a class="site-list__link" href="order.html">Вязание на заказ</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="new.html">Новые поступления</a>
@@ -62,7 +62,7 @@
     <section class="order">
       <h2 class="visually-hidden">Форма заказа</h2>
       <form class="order__form order-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="order-form__item">
+        <fieldset class="order-form__item order-form__item--type">
           <div class="order-form__wrapper wrapper">
             <h2 class="order-form__title">Тип</h2>
             <ul class="order-form__list radio-list">
@@ -77,7 +77,7 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="order-form__item">
+        <fieldset class="order-form__item order-form__item--color">
           <div class="order-form__wrapper wrapper">
             <h2 class="order-form__title">Цвет</h2>
             <ul class="order-form__list checkbox-list">
@@ -127,33 +127,31 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="order-form__item">
+        <fieldset class="order-form__item order-form__item--phone">
           <div class="order-form__wrapper wrapper">
             <h2 class="order-form__title">Тел</h2>
             <p class="order-form__field">
               <label class="order-form__label visually-hidden" for="phone-number">Телефонный номер</label>
-              <input class="order-form__input order-form__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-                id="phone-number">
+              <input class="field-list__input field-list__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="phone-number">
             </p>
           </div>
         </fieldset>
-        <fieldset class="order-form__item">
+        <fieldset class="order-form__item order-form__item--email">
           <div class="order-form__wrapper wrapper">
             <h2 class="order-form__title">E-mail</h2>
             <p class="order-form__field">
               <label class="order-form__label visually-hidden" for="email"></label>
-              <input class="order-form__input order-form__input--email" type="email" placeholder="Ваш Email*"
-                id="email">
+              <input class="field-list__input field-list__input--email" type="email" placeholder="Ваш Email*" id="email">
             </p>
           </div>
         </fieldset>
-        <fieldset class="order-form__item">
+        <fieldset class="order-form__item order-form__item--additional">
           <div class="order-form__wrapper wrapper">
             <h2 class="order-form__title">Доп</h2>
             <textarea class="order-form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </fieldset>
-        <div class="order-form__footer">
+        <div class="order-form__footer wrapper">
           <small class="order-form__footnote">*Поля обязательны для заполнения</small>
           <button class="order-form__btn btn" type="submit">Отправить заказ</button>
         </div>
