@@ -21,6 +21,13 @@
     @include font-set(17px, 18px);
   }
 
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    border-bottom: 2px solid $secondary-color;
+  }
+
   @include font-set(20px, 17px);
 }
 
