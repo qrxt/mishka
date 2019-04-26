@@ -15,6 +15,15 @@
   position: relative;
   width: 100%;
 
+  @include font-set(19px, 24px, 700);
+}
+
+.categories__link {
+  display: block;
+  padding: 27px 150px 30px 29px;
+  color: $white;
+  background-color: $secondary-color;
+
   &::after {
     content: "";
     display: block;
@@ -27,35 +36,6 @@
     opacity: 0.15;
   }
 
-  &--interior::after {
-    top: 23px;
-    right: 36px;
-    width: 40px;
-    height: 62px;
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
-  }
-
-  &--toys::after {
-    top: 21px;
-    right: 27px;
-    background-image: url("../img/icon-toy.svg");
-  }
-
-  &:hover:after,
-  &:focus-within:after {
-    opacity: 0.4;
-  }
-
-  @include font-set(19px, 24px, 700);
-}
-
-.categories__link {
-  display: block;
-  padding: 27px 150px 30px 29px;
-  color: $white;
-  background-color: $secondary-color;
-
   &:focus {
     outline: none;
   }
@@ -64,6 +44,30 @@
   &:focus {
     @include transition(background-color, 0.25s, $ease-out-quart);
   }
+
+  &:hover:after,
+  &:focus-within:after {
+    opacity: 0.4;
+  }
+
+  &:active:after {
+    opacity: 0.1;
+  }
+}
+
+.categories__item--interior .categories__link::after {
+  top: 23px;
+  right: 36px;
+  width: 40px;
+  height: 62px;
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+}
+
+.categories__item--toys .categories__link::after {
+  top: 21px;
+  right: 27px;
+  background-image: url("../img/icon-toy.svg");
 }
 
 .categories__item--interior .categories__link {
