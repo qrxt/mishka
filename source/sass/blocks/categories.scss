@@ -45,12 +45,12 @@
     @include transition(background-color, 0.25s, $ease-out-quart);
   }
 
-  &:hover:after,
-  &:focus-within:after {
+  &:hover::after,
+  &:focus-within::after {
     opacity: 0.4;
   }
 
-  &:active:after {
+  &:active::after {
     opacity: 0.1;
   }
 }
