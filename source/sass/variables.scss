@@ -36,6 +36,11 @@ $mobile-max-width: 767px;
 
 $desktop-wrapper-width: 1150px;
 
-/* Временные переменные */
+/* Retina */
 
-$debug-outline: 1px solid red;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+/* Transition Timing Functions */
+
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);

@@ -15,6 +15,15 @@
   position: relative;
   width: 100%;
 
+  @include font-set(19px, 24px, 700);
+}
+
+.categories__link {
+  display: block;
+  padding: 27px 150px 30px 29px;
+  color: $white;
+  background-color: $secondary-color;
+
   &::after {
     content: "";
     display: block;
@@ -27,29 +36,38 @@
     opacity: 0.15;
   }
 
-  &--interior::after {
-    top: 23px;
-    right: 36px;
-    width: 40px;
-    height: 62px;
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
+  &:focus {
+    outline: none;
   }
 
-  &--toys::after {
-    top: 21px;
-    right: 27px;
-    background-image: url("../img/icon-toy.svg");
+  &:hover,
+  &:focus {
+    @include transition(background-color, 0.25s, $ease-out-quart);
   }
 
-  @include font-set(19px, 24px, 700);
+  &:hover::after,
+  &:focus-within::after {
+    opacity: 0.4;
+  }
+
+  &:active::after {
+    opacity: 0.1;
+  }
 }
 
-.categories__link {
-  display: block;
-  padding: 27px 150px 30px 29px;
-  color: $white;
-  background-color: $secondary-color;
+.categories__item--interior .categories__link::after {
+  top: 23px;
+  right: 36px;
+  width: 40px;
+  height: 62px;
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+}
+
+.categories__item--toys .categories__link::after {
+  top: 21px;
+  right: 27px;
+  background-image: url("../img/icon-toy.svg");
 }
 
 .categories__item--interior .categories__link {
@@ -110,6 +128,13 @@
 
     @include font-set(20px, 30px, 700);
 
+    &:hover,
+    &:focus {
+      transform: translateY(-5px);
+
+      @include transition(transform, 0.25s, $ease-out-quart);
+    }
+
     &--interior::after {
       top: 29px;
     }
@@ -120,8 +145,18 @@
     }
   }
 
+  .categories__item:focus-within {
+    transform: translateY(-5px);
+
+    @include transition(transform, 0.25s, $ease-out-quart);
+  }
+
   .categories__link {
-    padding: 28px 170px 28px 35px;
+    padding: 28px 55% 28px 35px;
+  }
+
+  .categories__item--toys .categories__link {
+    padding: 28px 61% 28px 35px;
   }
 }
 
@@ -134,6 +169,10 @@
     height: 34px;
     background-size: auto 34px;
     background-position: -13px;
+  }
+
+  .categories__item--toys .categories__link {
+    padding: 28px 61% 33px 35px;
   }
 
   .categories__link {

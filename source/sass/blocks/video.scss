@@ -26,17 +26,19 @@
   &:hover,
   &:focus {
     outline: none;
-    width: 121px;
-    height: 93px;
-    top: calc(50% - 46px);
+    transform: scale(1.2);
+    top: calc(50% - 40px);
+
+    @include transition(transform, 0.15s, $ease-out-quart);
   }
 
   &:active {
     outline: none;
     opacity: 0.6;
-    width: 80px;
-    height: 61px;
-    top: calc(50% - 30px);
+    transform: scale(0.8);
+    top: calc(50% - 40px);
+
+    @include transition(transform, 0.15s, $ease-out-quart);
   }
 }
 

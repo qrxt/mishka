@@ -6,6 +6,10 @@
   display: none;
 }
 
+.page-footer__logo:not(.page-footer__logo--index) {
+  @include link-interaction;
+}
+
 .page-footer__developer {
   display: flex;
   justify-content: center;
@@ -23,7 +27,7 @@
 .page-footer__developer-logo {
   width: 27px;
   height: 34px;
-  background-image: url("../../img/logo-htmlacademy.svg");
+  background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
 }
 

@@ -2,8 +2,59 @@
   @include normalize-list();
 }
 
+.radio-list__item {
+  min-height: 40px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.radio-list__input {
+  position: absolute;
+  appearance: none;
+}
+
 .radio-list__label {
+  position: relative;
+  display: block;
+  padding: 10px 0 0 62px;
   color: $title-color;
 
   @include font-set(17px, 18px, 700);
+}
+
+.radio-list__label::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 1px solid $primary-color;
+}
+
+.radio-list__input:checked ~ .radio-list__label::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: $secondary-color;
+  border-radius: 50%;
+}
+
+.radio-list__input:hover ~ .radio-list__label::before,
+.radio-list__input:focus ~ .radio-list__label::before {
+  border: 1px solid $secondary-color;
+
+  @include transition(border, 0.3s, $ease-out-quart);
+}
+
+.radio-list__input:active ~ .radio-list__label::before {
+  border: 1px solid rgba($primary-color, 0.3);
+
+  @include transition(border, 0.15s, $ease-out-quart);
 }

@@ -1,0 +1,32 @@
+.zigzag-line::before {
+  content: "";
+  display: block;
+  padding-top: 50px;
+  width: 100%;
+  height: 23px;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  bottom: 0;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: 0 bottom;
+  background-size: auto 6px;
+}
+
+@media (min-width: $tablet-width) {
+  .zigzag-line::before {
+    background-size: auto 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .zigzag-line::before {
+    width: 90%;
+    background-size: 100% auto;
+    background-position: -35px bottom;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}

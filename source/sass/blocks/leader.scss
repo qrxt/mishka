@@ -1,13 +1,11 @@
 .leader {
   position: relative;
-  padding-bottom: 40px;
   margin-bottom: 28px;
-
-  @include zig-zag-bottom;
 }
 
 .leader__inner {
   position: relative;
+  padding-bottom: 40px;
 }
 
 .leader__photo-link {
@@ -15,10 +13,15 @@
   width: 260px;
   margin: 0 auto;
   margin-bottom: 18px;
+
+  @include link-interaction;
+  @include transition(opacity, 1s, $ease-out-quart);
 }
 
 .leader__link {
   color: $black;
+
+  @include link-interaction;
 }
 
 .leader__title {
@@ -65,16 +68,14 @@
 
 @media (min-width: $tablet-width) {
   .leader {
-    padding-bottom: 67px;
     margin-bottom: 50px;
-    background-size: auto 15px;
-    background-position: 27px bottom;
   }
 
   .leader__inner {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-bottom: 67px;
   }
 
   .leader__header {
@@ -116,13 +117,16 @@
   .leader__photo-link {
     position: absolute;
     width: 333px;
+    height: 404px;
     right: 50px;
-    bottom: -5px;
+    bottom: 65px;
     margin: 0;
   }
 
-  .leader__photo {
-    width: 100%;
+  .leader__photo-link img {
+    display: block;
+    width: 333px;
+    height: auto;
   }
 
   .leader__footer {
@@ -144,9 +148,10 @@
 @media (min-width: $desktop-width) {
   .leader {
     margin-bottom: 60px;
+  }
+
+  .leader__inner {
     padding-bottom: 95px;
-    background-size: auto 23px;
-    background-position: 0 bottom;
   }
 
   .leader__label {
@@ -157,6 +162,7 @@
   }
 
   .leader__header {
+    z-index: 2;
     justify-content: flex-start;
   }
 
@@ -182,7 +188,14 @@
   }
 
   .leader__photo-link {
-    width: 45%;
-    z-index: -1;
+    width: 525px;
+    height: 636px;
+    z-index: 0;
+    bottom: 96px;
+  }
+
+  .leader__photo-link img {
+    width: 525px;
+    height: auto;
   }
 }
