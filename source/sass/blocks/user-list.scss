@@ -62,7 +62,6 @@
   }
 
   .user-list__item--search {
-    //padding: 36px 31px 34px 51px;
     padding: 0;
     border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
@@ -100,8 +99,6 @@
   }
 
   .user-list__item--search {
-    //padding-bottom: 52px;
-
     &::before {
       top: 36px;
       left: 32px;
