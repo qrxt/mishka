@@ -114,11 +114,11 @@
             <ul class="order-form__list field-list">
               <li class="field-list__item">
                 <label class="field-list__label" for="first-name">Имя:</label>
-                <input class="field-list__input" type="text" placeholder="Введите ваше имя*" id="first-name">
+                <input class="field-list__input" type="text" placeholder="Введите ваше имя*" id="first-name" required>
               </li>
               <li class="field-list__item">
                 <label class="field-list__label" for="last-name">Фамилия:</label>
-                <input class="field-list__input" type="text" placeholder="Укажите фамилию*" id="last-name">
+                <input class="field-list__input" type="text" placeholder="Укажите фамилию*" id="last-name" required>
               </li>
               <li class="field-list__item">
                 <label class="field-list__label" for="patronymic">Отчество:</label>
@@ -132,7 +132,8 @@
             <h2 class="order-form__title">Тел</h2>
             <p class="order-form__field">
               <label class="order-form__label visually-hidden" for="phone-number">Телефонный номер</label>
-              <input class="field-list__input field-list__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="phone-number">
+              <input class="field-list__input field-list__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+                id="phone-number" required>
             </p>
           </div>
         </fieldset>
@@ -141,7 +142,8 @@
             <h2 class="order-form__title">E-mail</h2>
             <p class="order-form__field">
               <label class="order-form__label visually-hidden" for="email"></label>
-              <input class="field-list__input field-list__input--email" type="email" placeholder="Ваш Email*" id="email">
+              <input class="field-list__input field-list__input--email" type="email" placeholder="Ваш Email*" id="email"
+                required>
             </p>
           </div>
         </fieldset>

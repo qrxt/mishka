@@ -42,6 +42,11 @@
     background-image: url("../img/icon-toy.svg");
   }
 
+  &:hover:after,
+  &:focus-within:after {
+    opacity: 0.4;
+  }
+
   @include font-set(19px, 24px, 700);
 }
 
@@ -119,6 +124,13 @@
 
     @include font-set(20px, 30px, 700);
 
+    &:hover,
+    &:focus {
+      transform: translateY(-5px);
+
+      @include transition(transform, 0.25s, $ease-out-quart);
+    }
+
     &--interior::after {
       top: 29px;
     }
@@ -127,6 +139,12 @@
       top: 32px;
       right: 35px;
     }
+  }
+
+  .categories__item:focus-within {
+    transform: translateY(-5px);
+
+    @include transition(transform, 0.25s, $ease-out-quart);
   }
 
   .categories__link {
@@ -147,6 +165,10 @@
     height: 34px;
     background-size: auto 34px;
     background-position: -13px;
+  }
+
+  .categories__item--toys .categories__link {
+    padding: 28px 61% 33px 35px;
   }
 
   .categories__link {
