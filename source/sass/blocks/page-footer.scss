@@ -6,8 +6,19 @@
   display: none;
 }
 
-.page-footer__logo:not(.page-footer__logo--index) {
-  @include link-interaction;
+.page-footer__logo:not(.page-footer__logo--index):focus {
+  outline: none;
+}
+
+.page-footer__logo:not(.page-footer__logo--index):hover svg,
+.page-footer__logo:not(.page-footer__logo--index):focus svg {
+  fill: $secondary-color--dark;
+
+  @include transition(fill, 0.15s, $ease-out-quart);
+}
+
+.page-footer__logo:not(.page-footer__logo--index):active {
+  opacity: 0.3;
 }
 
 .page-footer__developer {

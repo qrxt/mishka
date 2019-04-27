@@ -22,22 +22,39 @@
   display: block;
   width: 22px;
   height: 21px;
-  background-repeat: no-repeat;
 
-  &--instagram {
-    background-image: url("../img/icon-insta.svg");
+  &:focus {
+    outline: none;
+  }
+}
+
+.social-list__link:focus .social-list__icon {
+  fill: $secondary-color--dark;
+
+  @include transition(fill, 0.2s, $ease-out-quart);
+}
+
+.social-list__item--facebook .social-list__link {
+  width: 15px;
+  height: 28px;
+}
+
+.social-list__item--twitter .social-list__link {
+  width: 23px;
+  height: 20px;
+}
+
+.social-list__icon {
+  width: 100%;
+
+  &:hover {
+    fill: $secondary-color--dark;
+
+    @include transition(fill, 0.15s, $ease-out-quart);
   }
 
-  &--facebook {
-    background-image: url("../img/icon-fb.svg");
-    width: 15px;
-    height: 28px;
-  }
-
-  &--twitter {
-    width: 23px;
-    height: 20px;
-    background-image: url("../img/icon-twitter.svg");
+  &:active {
+    opacity: 0.3;
   }
 }
 
