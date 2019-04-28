@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   margin-top: 23px;
   margin-bottom: 22px;
   padding: 0 42px 0 57px;
@@ -69,7 +70,7 @@
 
 @media (min-width: $desktop-width) {
   .social-list {
-    padding: 7px 0 20px 84px;
+    padding: 10px 0 20px 76px;
     margin: 0;
   }
 }
