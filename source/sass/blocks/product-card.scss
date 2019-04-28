@@ -78,9 +78,22 @@
 .product-card__buy {
   width: 20px;
   height: 20px;
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
+  margin-bottom: 3px;
   opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+
+    @include transition(opacity, 0.2s, $ease-out-quart);
+  }
+}
+
+.product-card__buy:hover .product-card__buy-icon,
+.product-card__buy:focus .product-card__buy-icon {
+  fill: $secondary-color;
+
+  @include transition(fill, 0.2s, $ease-out-quart);
 }
 
 @media (min-width: $tablet-width) {

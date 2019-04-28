@@ -26,20 +26,29 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 25px;
-}
-
-.page-footer__developer-label {
   color: $title-color;
-  margin-right: 30px;
 
   @include font-set(19px, 18px, 700);
+
+  &:active {
+    opacity: 0.3;
+
+    @include transition(opacity, 0.15s, $ease-out-quart);
+  }
+}
+
+.page-footer__developer:hover .page-footer__developer-logo,
+.page-footer__developer:focus .page-footer__developer-logo {
+  fill: $secondary-color--dark;
+
+  @include transition(fill, 0.15s, $ease-out-quart);
 }
 
 .page-footer__developer-logo {
   width: 27px;
   height: 34px;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
+  margin-left: 30px;
+  fill: $secondary-color;
 }
 
 @media (min-width: $tablet-width) {

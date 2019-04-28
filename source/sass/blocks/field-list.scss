@@ -31,6 +31,29 @@
   @include font-set(20px, 17px);
 }
 
+.field-list__icon {
+  position: absolute;
+  opacity: 0.2;
+  top: 0;
+  right: 0;
+}
+
+.field-list__icon--phone {
+  top: 2px;
+  right: 8px;
+}
+
+.field-list__icon--mail {
+  top: 8px;
+  right: 5px;
+}
+
+.field-list__input:hover ~ .field-list__icon,
+.field-list__input:focus ~ .field-list__icon {
+  opacity: 1;
+  fill: $secondary-color;
+}
+
 .field-list__label {
   display: block;
   margin-bottom: 10px;
