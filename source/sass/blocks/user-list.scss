@@ -6,6 +6,7 @@
 }
 
 .user-list__item {
+  position: relative;
   padding: 27px 30px 28px 76px;
   border-bottom: 1px solid #ececec;
 
@@ -15,37 +16,42 @@
   &--cart {
     position: relative;
   }
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 32px;
-    left: 35px;
-
-    background-repeat: no-repeat;
-    opacity: 0.2;
-  }
-
-  &--search::before {
-    width: 18px;
-    height: 18px;
-    background-image: url("../img/icon-search.svg");
-  }
-
-  &--cart::before {
-    top: 30px;
-    left: 32px;
-    width: 21px;
-    height: 18px;
-    background-image: url("../img/icon-cart.svg");
-  }
 }
 
 .user-list__link {
   color: $black;
 
-  @include link-interaction;
+  &:hover,
+  &:focus {
+    outline: 0;
+    color: rgba($black, 0.6);
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
+  }
+}
+
+.user-list__icon {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: 32px;
+  opacity: 0.2;
+
+  &--cart {
+    width: 21px;
+    height: 18px;
+  }
+}
+
+.user-list__link:hover .user-list__icon,
+.user-list__link:focus .user-list__icon {
+  opacity: 1;
+  fill: $secondary-color;
+}
+
+.user-list__link:active .user-list__icon {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,7 +68,6 @@
   }
 
   .user-list__item--search {
-    //padding: 36px 31px 34px 51px;
     padding: 0;
     border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
@@ -100,7 +105,6 @@
   }
 
   .user-list__item--search {
-    //padding-bottom: 52px;
 
     &::before {
       top: 36px;
