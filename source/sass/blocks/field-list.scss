@@ -9,7 +9,7 @@
 }
 
 .field-list__input {
-  padding: 3px 0 12px 0;
+  padding: 3px 40px 12px 0;
   width: 100%;
   border: none;
   border-bottom: 2px solid black;
@@ -31,10 +31,76 @@
   @include font-set(20px, 17px);
 }
 
+.field-list__icon {
+  position: absolute;
+  opacity: 0.2;
+  top: 0;
+  right: 0;
+}
+
+.field-list__icon--phone {
+  top: 2px;
+  right: 8px;
+}
+
+.field-list__icon--mail {
+  top: 8px;
+  right: 5px;
+}
+
+.field-list__input:hover ~ .field-list__icon,
+.field-list__input:focus ~ .field-list__icon {
+  opacity: 1;
+  fill: $secondary-color;
+}
+
 .field-list__label {
   display: block;
   margin-bottom: 10px;
   color: $title-color;
 
   @include font-set(17px, 18px, 700);
+}
+
+@media (min-width: $tablet-width) {
+  .field-list {
+    width: 100%;
+  }
+
+  .field-list__item {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .field-list__label {
+    padding-top: 13px;
+    margin-right: 24px;
+
+    @include font-set(19px, 18px, 700);
+  }
+
+  .field-list__input {
+    padding-right: 50px;
+    padding-top: 9px;
+    padding-left: 15px;
+    background-color: transparent;
+  }
+
+  .field-list__item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .field-list__input::placeholder {
+    @include font-set(19px, 18px);
+  }
+
+  .field-list__icon--phone {
+    top: 9px;
+    right: 27px;
+  }
+
+  .field-list__icon--mail {
+    top: 13px;
+    right: 22px;
+  }
 }

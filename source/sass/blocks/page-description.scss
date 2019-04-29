@@ -9,5 +9,8 @@
 @media (min-width: $tablet-width) {
   .page-description {
     padding: 0 50px;
+    margin-bottom: 59px;
+
+    @include font-set(17px, 30px);
   }
 }

@@ -45,8 +45,14 @@
 
   .promo:not(.promo--image) {
     @include zig-zag-fill-bottom;
+  }
 
+  .promo--catalog {
     margin-bottom: 68px;
+  }
+
+  .promo--form {
+    margin-bottom: 60px;
   }
 
   .promo--image {
