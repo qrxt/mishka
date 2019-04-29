@@ -87,6 +87,10 @@
 
     @include transition(opacity, 0.2s, $ease-out-quart);
   }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
 .product-card__buy:hover .product-card__buy-icon,

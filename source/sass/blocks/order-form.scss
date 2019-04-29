@@ -94,3 +94,100 @@
 
   @include font-set(17px, 16px, 700);
 }
+
+@media (min-width: $tablet-width) {
+  .order {
+    margin-bottom: 50px;
+  }
+
+  .order-form__item--type {
+    margin-bottom: 25px;
+  }
+
+  .order-form__item--color {
+    margin-bottom: 52px;
+    padding-top: 51px;
+    background-color: #f1f1f1;
+  }
+
+  .order-form__item--username {
+    margin-bottom: 50px;
+  }
+
+  .order-form__item--color .order-form__title {
+    margin-right: 124px;
+  }
+
+  .order-form__item--username .order-form__title,
+  .order-form__item--phone .order-form__title,
+  .order-form__item--email .order-form__title {
+    margin-right: 100px;
+  }
+
+  .order-form__item--additional .order-form__title {
+    margin-right: 102px;
+  }
+
+  .order-form__item--phone {
+    margin: 0;
+    padding-top: 52px;
+    padding-bottom: 27px;
+    background-color: #f1f1f1;
+  }
+
+  .order-form__item--email {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    background-color: #f1f1f1;
+  }
+
+  .order-form__field {
+    width: 100%;
+  }
+
+  .order-form__wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .order-form__title {
+    width: 90px;
+    margin-bottom: 0;
+    margin-right: 77px;
+    padding-top: 17px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .order-form__textarea {
+    width: 100%;
+
+    &::placeholder {
+      @include font-set(19px, 18px);
+    }
+  }
+
+  .order-form__item--additional {
+    margin-bottom: 52px;
+  }
+
+  .order-form__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .order-form__btn {
+    width: 230px;
+    padding: 17px 30px;
+    order: -1;
+  }
+
+  .order-form__footnote {
+    margin: 0;
+
+    @include font-set(17px, 30px);
+  }
+}
