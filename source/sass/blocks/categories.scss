@@ -165,6 +165,10 @@
     margin-bottom: 120px;
   }
 
+  .categories__item {
+    width: 525px;
+  }
+
   .categories::after {
     height: 34px;
     background-size: auto 34px;
@@ -172,7 +176,7 @@
   }
 
   .categories__item--toys .categories__link {
-    padding: 28px 61% 33px 35px;
+    padding: 28px 62% 33px 35px;
   }
 
   .categories__link {
