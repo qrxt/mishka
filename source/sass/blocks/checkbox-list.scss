@@ -111,4 +111,13 @@
   .checkbox-list__label::before {
     border: 2px solid $primary-color;
   }
+
+  .checkbox-list__input:hover ~ .checkbox-list__label::before,
+  .checkbox-list__input:focus ~ .checkbox-list__label::before {
+    border: 2px solid $secondary-color;
+  }
+
+  .checkbox-list__input:active ~ .checkbox-list__label::before {
+    border: 2px solid rgba($primary-color, 0.3);
+  }
 }
