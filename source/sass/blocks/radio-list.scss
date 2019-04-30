@@ -75,6 +75,7 @@
   .radio-list__label::before {
     width: 52px;
     height: 53px;
+    border: 2px solid $primary-color;
   }
 
   .radio-list__input:checked ~ .radio-list__label::after {

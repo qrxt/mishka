@@ -94,3 +94,21 @@
     left: 10px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .checkbox-list {
+    padding-left: 3px;
+  }
+
+  .checkbox-list__item:nth-child(2n+1) {
+    margin-right: 0;
+  }
+
+  .checkbox-list__item:not(:nth-child(3n)) {
+    margin-right: 63px;
+  }
+
+  .checkbox-list__label::before {
+    border: 2px solid $primary-color;
+  }
+}
