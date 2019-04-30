@@ -14,7 +14,10 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 
+const cheerio = require("gulp-cheerio");
 const svgstore = require("gulp-svgstore");
+
+const uglify = require("gulp-uglify");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -62,11 +65,22 @@ gulp.task("webp", function () {
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/icon-*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
+    .pipe(cheerio({
+      run: function ($) {
+        $("[fill]").removeAttr("fill");
+      },
+      parserOptions: { xmlMode: true }
     }))
+    .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("source/img/sprite")); /* переименовать запрашиваемые id svg в html */
+});
+
+gulp.task("compressjs", function () {
+  return gulp.src("source/js/script.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("source/js")); /* test */
 });
 
 gulp.task("start", gulp.series("css", "server"));
