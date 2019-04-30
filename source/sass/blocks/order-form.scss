@@ -204,7 +204,7 @@
   }
 
   .order-form__item--color .order-form__title {
-    margin-right: 58px;
+    margin-right: 22px;
   }
 
   .order-form__item--username .order-form__title {
@@ -234,5 +234,9 @@
 
   .order-form__footnote {
     padding-bottom: 6px;
+  }
+
+  .order-form__btn {
+    padding: 17px 18px;
   }
 }

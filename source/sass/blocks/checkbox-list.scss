@@ -11,6 +11,10 @@
 .checkbox-list__input {
   position: absolute;
   appearance: none;
+
+  &::-ms-check {
+    display: none;
+  }
 }
 
 .checkbox-list__label {
@@ -42,7 +46,6 @@
   top: 14px;
   left: 8px;
   background-image: url("../img/icon-tick.svg");
-  background-size: cover;
 }
 
 .checkbox-list__input:hover ~ .checkbox-list__label::before,
@@ -97,6 +100,7 @@
 
 @media (min-width: $desktop-width) {
   .checkbox-list {
+    width: 750px;
     padding-left: 3px;
   }
 
