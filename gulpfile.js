@@ -17,7 +17,11 @@ const webp = require("gulp-webp");
 const cheerio = require("gulp-cheerio");
 const svgstore = require("gulp-svgstore");
 
-const uglify = require("gulp-uglify");
+const terser = require("gulp-terser");
+
+const del = require("del");
+
+const htmlmin = require("gulp-htmlmin");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -64,7 +68,10 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src([
+    "source/img/icon-*.svg",
+    "source/img/logo-*.svg"
+  ])
     .pipe(cheerio({
       run: function ($) {
         $("[fill]").removeAttr("fill");
@@ -73,14 +80,32 @@ gulp.task("sprite", function () {
     }))
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img/sprite")); /* переименовать запрашиваемые id svg в html */
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("compressjs", function () {
   return gulp.src("source/js/script.js")
-    .pipe(uglify())
+    .pipe(sourcemap.init())
+    .pipe(terser())
     .pipe(rename("script.min.js"))
-    .pipe(gulp.dest("source/js")); /* test */
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("source/js"));
 });
+
+gulp.task("minhtml", function () {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("clean", function () {
+  return del("build");
+});
+
+/*
+gulp.task("publish", gulp.series(
+
+));
+*/
 
 gulp.task("start", gulp.series("css", "server"));
