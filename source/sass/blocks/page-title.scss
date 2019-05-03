@@ -2,6 +2,7 @@
   margin: 0;
   font-family: $font-primary;
   text-align: center;
+  color: $title-color;
 
   @include font-set(27px, 30px, 700);
 }
