@@ -1,26 +1,20 @@
 "use strict";
 
-var gulp = require("gulp");
-var plumber = require("gulp-plumber");
-var sourcemap = require("gulp-sourcemaps");
-var sass = require("gulp-sass");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var server = require("browser-sync").create();
-
+const gulp = require("gulp");
+const plumber = require("gulp-plumber");
+const sourcemap = require("gulp-sourcemaps");
+const sass = require("gulp-sass");
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const server = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
-
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
-
 const cheerio = require("gulp-cheerio");
 const svgstore = require("gulp-svgstore");
-
 const terser = require("gulp-terser");
-
 const del = require("del");
-
 const htmlmin = require("gulp-htmlmin");
 
 gulp.task("css", function () {
@@ -31,6 +25,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -48,13 +43,12 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  //gulp.watch("source/*.html").on("change", server.reload);
-  gulp.watch("source/js/script.js", gulp.series("compressjs", "refresh"));
-  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "refresh"));
-  gulp.watch("source/*.html", gulp.series("minhtml", "refresh"));
+  gulp.watch("source/js/script.js", gulp.series("compress-js", "refresh"));
+  gulp.watch("source/img/icon-*.svg", gulp.series("make-sprite", "refresh"));
+  gulp.watch("source/*.html", gulp.series("minify-html", "refresh"));
 });
 
-gulp.task("optimages", function () {
+gulp.task("optimize-images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
@@ -64,13 +58,13 @@ gulp.task("optimages", function () {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("webp", function () {
+gulp.task("make-webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("sprite", function () {
+gulp.task("make-sprite", function () {
   return gulp.src([
     "source/img/icon-*.svg",
     "source/img/logo-*.svg"
@@ -86,8 +80,9 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("compressjs", function () {
+gulp.task("compress-js", function () {
   return gulp.src("source/js/script.js")
+    .pipe(gulp.dest("build/js"))
     .pipe(sourcemap.init())
     .pipe(terser())
     .pipe(rename("script.min.js"))
@@ -95,9 +90,13 @@ gulp.task("compressjs", function () {
     .pipe(gulp.dest("build/js"));
 });
 
-gulp.task("minhtml", function () {
+gulp.task("minify-html", function () {
   return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"))
     .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(rename({
+      suffix: ".min"
+    }))
     .pipe(gulp.dest("build"));
 });
 
@@ -108,10 +107,9 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/*.min.js",
-    "source/js/*.min.js.map",
-    "source/*.ico"
+    "source/*.ico",
+    "source/js/picturefill.min.js",
+    "source/js/svg4everybody.min.js"
   ], {
       base: "source"
     })
@@ -126,10 +124,14 @@ gulp.task("refresh", function (done) {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
-  "css",
-  "sprite",
-  "compressjs",
-  "minhtml"
+  "optimize-images",
+  gulp.parallel(
+    "css",
+    "make-sprite",
+    "make-webp",
+    "compress-js",
+    "minify-html"
+  )
 ));
 
 gulp.task("start", gulp.series("build", "server"));
