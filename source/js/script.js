@@ -1,3 +1,5 @@
+"use strict"
+
 const mainNav = document.querySelector(".main-nav");
 const mainNavToggle = mainNav.querySelector(".main-nav__toggle");
 

@@ -98,10 +98,17 @@
     padding-bottom: 360px;
   }
 
-  .promo:not(.promo--image) {
+  .promo--form {
+    margin-bottom: 106px;
+  }
+
+  .promo--catalog {
     margin-bottom: 114px;
-    padding: 16px 0 117px;
+  }
+
+  .promo:not(.promo--image) {
     background-size: auto 34px;
+    padding: 16px 0 117px;
   }
 
   .promo__label {

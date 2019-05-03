@@ -191,3 +191,52 @@
     @include font-set(17px, 30px);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .order-form__field {
+    width: 700px;
+  }
+
+  .order-form__title {
+    margin-left: 60px;
+    padding-top: 18px;
+    margin-right: 25px;
+  }
+
+  .order-form__item--color .order-form__title {
+    margin-right: 22px;
+  }
+
+  .order-form__item--username .order-form__title {
+    margin: 0 26px 0 60px;
+  }
+
+  .order-form__item--phone .order-form__title,
+  .order-form__item--email .order-form__title {
+    margin: 0 25px 0 60px;
+  }
+
+  .order-form__item--additional {
+    margin-bottom: 50px;
+  }
+
+  .order-form__item--additional .order-form__title {
+    margin-right: 25px;
+  }
+
+  .order-form__footer {
+    padding: 0 225px;
+  }
+
+  .order-form__textarea {
+    width: 700px;
+  }
+
+  .order-form__footnote {
+    padding-bottom: 6px;
+  }
+
+  .order-form__btn {
+    padding: 17px 18px;
+  }
+}

@@ -11,6 +11,10 @@
 .radio-list__input {
   position: absolute;
   appearance: none;
+
+  &::-ms-check {
+    display: none;
+  }
 }
 
 .radio-list__label {
@@ -75,12 +79,22 @@
   .radio-list__label::before {
     width: 52px;
     height: 53px;
+    border: 2px solid $primary-color;
   }
 
   .radio-list__input:checked ~ .radio-list__label::after {
     width: 22px;
     height: 22px;
-    top: calc(50% - 11px);
+    top: 15px;
     left: 15px;
+  }
+
+  .radio-list__input:hover ~ .radio-list__label::before,
+  .radio-list__input:focus ~ .radio-list__label::before {
+    border: 2px solid $secondary-color;
+  }
+
+  .radio-list__input:active ~ .radio-list__label::before {
+    border: 2px solid rgba($primary-color, 0.3);
   }
 }
