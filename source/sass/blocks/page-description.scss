@@ -1,6 +1,5 @@
 .page-description {
-  margin: 0 0 27px 0;
-  padding: 0 30px;
+  margin-bottom: 27px;
   color: $primary-color;
 
   @include font-set(13px, 24px);
@@ -8,17 +7,15 @@
 
 @media (min-width: $tablet-width) {
   .page-description {
-    padding: 0 50px;
     margin-bottom: 59px;
 
     @include font-set(17px, 30px);
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .page-description {
-    width: 700px;
-    margin: 0 auto 58px;
-    padding: 0;
+    padding: 0 225px;
+    margin-bottom: 58px;
   }
 }
