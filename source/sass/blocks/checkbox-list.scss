@@ -46,6 +46,8 @@
   top: 14px;
   left: 8px;
   background-image: url("../img/icon-tick.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .checkbox-list__input:hover ~ .checkbox-list__label::before,
@@ -114,10 +116,13 @@
 @media (min-width: $desktop-width) {
   .checkbox-list {
     width: 750px;
-    padding-left: 3px;
   }
 
   .checkbox-list__item:nth-child(2n+1) {
     margin-right: 0;
+  }
+
+  .checkbox-list__item:not(:nth-child(3n)) {
+    margin-right: 63px;
   }
 }
