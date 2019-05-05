@@ -15,6 +15,10 @@
   border-bottom: 2px solid black;
   color: $primary-color;
 
+  &:focus:invalid {
+    border-color: #d1636e;
+  }
+
   &::placeholder {
     color: $placeholder-color;
 
