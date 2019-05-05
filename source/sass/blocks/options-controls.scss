@@ -1,0 +1,24 @@
+.options-controls__btn {
+  width: 82px;
+  padding: 15px 10px;
+  border-color: rgba($primary-color, 0.1);
+
+  &:focus,
+  &:hover {
+    border-color: $secondary-color;
+    background-color: $white;
+    color: $primary-color;
+  }
+
+  &--selected {
+    border-color: $secondary-color;
+
+    @include transition(border-color, 0.15s, $ease-out-quart);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .options-controls__btn {
+    width: 112px;
+  }
+}
