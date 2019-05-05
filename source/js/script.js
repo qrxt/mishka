@@ -23,12 +23,14 @@ mainNavToggle.addEventListener("click", function () {
   mainNav.classList.toggle("main-nav--opened");
 });
 
-leaderBtn.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  overlay.classList.toggle("overlay--show");
-  toCartPopup.classList.toggle("to-cart--show");
-  toCartPopupControls[0].focus();
-});
+if (leaderBtn) {
+  leaderBtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    overlay.classList.toggle("overlay--show");
+    toCartPopup.classList.toggle("to-cart--show");
+    toCartPopupControls[0].focus();
+  });
+}
 
 buyButtons.forEach(function (button) {
   button.addEventListener("click", function (evt) {
