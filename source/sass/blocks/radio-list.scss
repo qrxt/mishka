@@ -35,7 +35,7 @@
   top: 0;
   left: 0;
   border-radius: 50%;
-  border: 1px solid $primary-color;
+  border: 2px solid $primary-color;
 }
 
 .radio-list__input:checked ~ .radio-list__label::after {
@@ -52,13 +52,13 @@
 
 .radio-list__input:hover ~ .radio-list__label::before,
 .radio-list__input:focus ~ .radio-list__label::before {
-  border: 1px solid $secondary-color;
+  border: 2px solid $secondary-color;
 
   @include transition(border, 0.3s, $ease-out-quart);
 }
 
 .radio-list__input:active ~ .radio-list__label::before {
-  border: 1px solid rgba($primary-color, 0.3);
+  border: 2px solid rgba($primary-color, 0.3);
 
   @include transition(border, 0.15s, $ease-out-quart);
 }

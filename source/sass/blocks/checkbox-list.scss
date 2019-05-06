@@ -34,7 +34,7 @@
   position: absolute;
   top: 2px;
   left: 0;
-  border: 1px solid $primary-color;
+  border: 2px solid $primary-color;
 }
 
 .checkbox-list__input:checked ~ .checkbox-list__label::after {
@@ -52,13 +52,13 @@
 
 .checkbox-list__input:hover ~ .checkbox-list__label::before,
 .checkbox-list__input:focus ~ .checkbox-list__label::before {
-  border: 1px solid $secondary-color;
+  border: 2px solid $secondary-color;
 
   @include transition(border, 0.15s, $ease-out-quart);
 }
 
 .checkbox-list__input:active ~ .checkbox-list__label::before {
-  border: 1px solid rgba($primary-color, 0.3);
+  border: 2px solid rgba($primary-color, 0.3);
 
   @include transition(border, 0.15s, $ease-out-quart);
 }

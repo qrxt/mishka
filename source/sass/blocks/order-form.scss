@@ -3,9 +3,12 @@
   padding: 0;
   border: none;
 
-  &--type,
+  &--type {
+    margin-bottom: 17px;
+  }
+
   &--color {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
   }
 
   &--additional {
@@ -27,7 +30,8 @@
 }
 
 .order-form__title {
-  position: relative;
+  display: flex;
+  align-items: center;
   margin: 0 0 25px 0;
   color: $secondary-color;
   text-transform: uppercase;
@@ -37,13 +41,11 @@
 
 .order-form__title::after {
   content: "";
-  display: block;
-  width: 198px;
+  width: 10px;
   height: 1px;
-  position: absolute;
-  right: 0;
-  top: calc(50% - 1px);
   background-color: $secondary-color;
+  flex-grow: 1;
+  margin-left: 21px;
 }
 
 .order-form__input {
@@ -103,6 +105,7 @@
   .order-form__title {
     width: 166px;
     padding: 18px 0 0 1px;
+    align-items: flex-start;
 
     &::after {
       display: none;
@@ -181,12 +184,20 @@
 
   .order-form__title {
     margin-right: 9px;
-    text-align: center;
+    justify-content: center;
   }
 
   .order-form__item--phone .order-form__field,
   .order-form__item--email .order-form__field {
     width: 700px;
+  }
+
+  .order-form__item--phone .order-form__title {
+    padding-right: 7px;
+  }
+
+  .order-form__item--email .order-form__title {
+    padding-left: 12px;
   }
 
   .order-form__textarea {

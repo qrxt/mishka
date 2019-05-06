@@ -15,7 +15,7 @@
   border-bottom: 2px solid black;
   color: $primary-color;
 
-  &:focus:invalid {
+  &--invalid {
     border-color: #d1636e;
   }
 

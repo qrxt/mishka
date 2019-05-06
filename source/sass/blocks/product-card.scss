@@ -83,6 +83,7 @@
 
   &:hover,
   &:focus {
+    outline: none;
     opacity: 1;
 
     @include transition(opacity, 0.2s, $ease-out-quart);
