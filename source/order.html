@@ -125,17 +125,17 @@
           <div class="order-form__wrapper wrapper">
             <h2 class="order-form__title">ФИО</h2>
             <ul class="order-form__list field-list">
-              <li class="field-list__item">
-                <label class="field-list__label" for="first-name">Имя:</label>
-                <input class="field-list__input" type="text" placeholder="Введите ваше имя*" id="first-name" required>
+              <li class="field-list__item text-field">
+                <label class="text-field__label" for="first-name">Имя:</label>
+                <input class="text-field__input" type="text" placeholder="Введите ваше имя*" id="first-name" required>
               </li>
-              <li class="field-list__item">
-                <label class="field-list__label" for="last-name">Фамилия:</label>
-                <input class="field-list__input" type="text" placeholder="Укажите фамилию*" id="last-name" required>
+              <li class="field-list__item text-field">
+                <label class="text-field__label" for="last-name">Фамилия:</label>
+                <input class="text-field__input" type="text" placeholder="Укажите фамилию*" id="last-name" required>
               </li>
-              <li class="field-list__item">
-                <label class="field-list__label" for="patronymic">Отчество:</label>
-                <input class="field-list__input" type="text" placeholder="Отчество, если желаете" id="patronymic">
+              <li class="field-list__item text-field">
+                <label class="text-field__label" for="patronymic">Отчество:</label>
+                <input class="text-field__input" type="text" placeholder="Отчество, если желаете" id="patronymic">
               </li>
             </ul>
           </div>
@@ -143,11 +143,11 @@
         <fieldset class="order-form__item order-form__item--phone">
           <div class="order-form__wrapper wrapper">
             <h2 class="order-form__title">Тел</h2>
-            <p class="order-form__field">
-              <label class="order-form__label visually-hidden" for="phone-number">Телефонный номер</label>
-              <input class="field-list__input field-list__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-                id="phone-number" required>
-              <svg class="field-list__icon field-list__icon--phone" width="25" height="24">
+            <p class="order-form__field text-field">
+              <label class="text-field__label visually-hidden" for="phone-number">Телефонный номер</label>
+              <input class="text-field__input text-field__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="phone-number"
+                required>
+              <svg class="text-field__icon text-field__icon--phone" width="25" height="24">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
             </p>
@@ -156,11 +156,11 @@
         <fieldset class="order-form__item order-form__item--email">
           <div class="order-form__wrapper wrapper">
             <h2 class="order-form__title">E-mail</h2>
-            <p class="order-form__field">
-              <label class="order-form__label visually-hidden" for="email"></label>
-              <input class="field-list__input field-list__input--email" type="email" placeholder="Ваш Email*" id="email"
+            <p class="order-form__field text-field">
+              <label class="text-field__label visually-hidden" for="email"></label>
+              <input class="text-field__input text-field__input--email" type="email" placeholder="Ваш Email*" id="email"
                 required>
-              <svg class="field-list__icon field-list__icon--mail" width="32" height="26">
+              <svg class="text-field__icon text-field__icon--mail" width="32" height="26">
                 <use xlink:href="img/sprite.svg#icon-mail"></use>
               </svg>
             </p>
