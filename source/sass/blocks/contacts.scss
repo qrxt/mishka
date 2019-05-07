@@ -220,10 +220,10 @@
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
-        background-image: url("../img/map-desktop@2x.jpg");
-        background-size: 525px auto;
-      }
+      background-image: url("../img/map-desktop@2x.jpg");
+      background-size: 525px auto;
     }
+  }
 
   .contacts__body {
     flex-direction: column;
