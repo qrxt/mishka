@@ -4,9 +4,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 23px;
-  margin-bottom: 20px;
-  padding: 0 42px 2px 57px;
+  justify-content: center;
+  margin: 23px auto 20px;
+  width: 150px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -62,14 +62,14 @@
   .social-list {
     width: 235px;
     margin: 0 0 18px 0;
-    padding: 10px 0 0 87px;
+    padding: 10px 0 0 81px;
     border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .social-list {
-    padding: 7px 0 20px 84px;
+    padding: 7px 0 20px 78px;
     margin: 0;
   }
 }

@@ -158,6 +158,15 @@
   .categories__item--toys .categories__link {
     padding: 28px 61% 28px 35px;
   }
+
+  .categories__item--interior .categories__link::after {
+    top: 28px;
+  }
+
+  .categories__item--toys .categories__link::after {
+    top: 32px;
+    right: 35px;
+  }
 }
 
 @media (min-width: $desktop-width) {
