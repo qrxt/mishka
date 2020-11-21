@@ -1,60 +1,41 @@
-# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Мишка
+![image](https://user-images.githubusercontent.com/46269438/99878292-5bbd4c80-2c15-11eb-9d68-621553456b15.png)
 
-* Студент: [Eugene Kalinowski](https://up.htmlacademy.ru/adaptive/16/user/409751).
-* Наставник: [Сергей Кравченко](https://up.htmlacademy.ru/adaptive/16/user/13921).
+![Dependencies](https://david-dm.org/qrxt/409751-mishka-16.svg)
 
----
+Mishka - сайт магазина вязаных штуковин для дома. Проект обучающих курсов HTML Academy, в котором используется адаптивная кроссбраузерная верстка.
 
-**Обратите внимание, что папка с вашими исходными файлами — `source/`.**
+![Главная](https://user-images.githubusercontent.com/46269438/99878324-9921da00-2c15-11eb-8587-fae5ecac852d.JPG)
 
-Полезный файл:
+## Технологии
+- [Gulp](https://gulpjs.com/) - Таск-менеджер для автоматизации рутины.
+- [SCSS](https://sass-scss.ru/) - Препроцессор CSS.
 
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
+## Особенности
+- Адаптивная кроссбраузерная верстка (Flex)
+- БЭМ-нейминг
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
+## Установка
+1. Используйте в нужном пустом каталоге `git clone git@github.com:qrxt/409751-mishka-16.git .`
+2. Воспользуйтесь `npm install` для установки зависимостей
+3. Для запуска:
+    * Воспользуйтесь `npm run watch` для запуска сервера, посетите http://localhost:3000/
+    * Воспользуйтесь `npm run build` для генерации бандла. Бандл будет лежать в ./dist
 
----
+## Скриншоты
+![Каталог](https://user-images.githubusercontent.com/46269438/99878410-354be100-2c16-11eb-8270-dff38cd2b611.png)
+![Форма](https://user-images.githubusercontent.com/46269438/99878441-5f9d9e80-2c16-11eb-80f5-c5cbf908a01e.png)
 
-### Памятка
+## Демо
+На Github Pages: [Тык!](https://qrxt.github.io/409751-mishka-16/build/index)
 
-#### 1. Зарегистрируйтесь на Гитхабе
+## Контакты
+- [Telegram](https://telegram.me/qrxt357)
+- [VK](https://vk.com/id106399922)
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
-#### 2. Создайте форк
-
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/409751-mishka-16) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
-
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455590/09e03f32-206a-11e6-9dc8-32d4c11edc90.png">
-
-Получится вот так:
-
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455592/0a060884-206a-11e6-863d-531a4023ac2e.png">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
-
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/26306270/5e6b9eba-3efb-11e7-9817-0d6b7faa21b4.png">
-
-Клонировать репозиторий можно так:
-
-```
-git clone SSH-адрес_вашего_форка
-```
-
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
 
 ---
 
 <a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
 
 Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
-
-[travis-image]: https://travis-ci.com/htmlacademy-adaptive/409751-mishka-16.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-adaptive/409751-mishka-16
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/409751-mishka-16/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/409751-mishka-16?type=dev
