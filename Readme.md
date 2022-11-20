@@ -27,7 +27,7 @@ Mishka - сайт магазина вязаных штуковин для дом
 ![Форма](https://user-images.githubusercontent.com/46269438/99878441-5f9d9e80-2c16-11eb-80f5-c5cbf908a01e.png)
 
 ## Демо
-На Github Pages: [Тык!](https://qrxt.github.io/409751-mishka-16/build/index)
+На Github Pages: [Тык!](https://qrxt.github.io/mishka/build/)
 
 ## Контакты
 - [Telegram](https://telegram.me/qrxt357)
